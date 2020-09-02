@@ -25,10 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Добавил Hello X5">
-      <change afterPath="$PROJECT_DIR$/HomeTask2/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IvanK.iml" afterDir="false" />
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Compi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,13 +50,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Test1">
     <configuration name="SchoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SchoolTest" />
       <module name="SchoolTest" />
@@ -65,8 +66,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test1" />
+      <module name="IvanK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test1" />
         <item itemvalue="Application.SchoolTest" />
       </list>
     </recent_temporary>
@@ -94,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599027613324</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Compi">
+      <created>1599031581883</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599031581883</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,7 +133,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Создал Проект" />
     <MESSAGE value="Добавил Hello X5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил Hello X5" />
+    <MESSAGE value="Compi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compi" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1599030521552">
@@ -132,14 +149,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1599030389309" />
-    <state x="132" y="0" key="SettingsEditor" timestamp="1599031424168">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599031511723">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="132" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599031424168" />
-    <state x="513" y="233" key="VCS.EditChangelistDialog" timestamp="1599027695555">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599031511723" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599031511723">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599027695555" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599031511723" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599031511723">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599031511723" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599031511723">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599031511723" />
+    <state x="144" y="0" key="SettingsEditor" timestamp="1599031458147">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="144" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1599031458147" />
+    <state x="513" y="233" key="VCS.EditChangelistDialog" timestamp="1599031626807">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599027711329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
