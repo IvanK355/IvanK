@@ -25,9 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test2.java ready">
-      <change afterPath="$PROJECT_DIR$/HomeTask2/Test3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test3.java ready">
+      <change afterPath="$PROJECT_DIR$/HomeTask2/Test4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +57,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.Test3">
+  <component name="RunManager" selected="Application.Test4">
     <configuration name="SchoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="SchoolTest" />
       <module name="SchoolTest" />
@@ -87,8 +86,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test4" />
+      <module name="IvanK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test4" />
         <item itemvalue="Application.Test3" />
         <item itemvalue="Application.Test2" />
         <item itemvalue="Application.Test1" />
@@ -140,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599033905055</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Test3.java ready">
+      <created>1599034216890</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1599034216890</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +180,8 @@
     <MESSAGE value="Compi" />
     <MESSAGE value="Test1 ready" />
     <MESSAGE value="Test2.java ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test2.java ready" />
+    <MESSAGE value="Test3.java ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test3.java ready" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1599030521552">
@@ -181,22 +196,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1599030389309" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599034166477">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599034468483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599034166477" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599034166477">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599034468483" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599034468483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599034166477" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599034166477">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599034468483" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599034468483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599034166477" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599034166477">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599034468483" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599034468483">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599034166477" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599034468483" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1599031458147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -205,10 +220,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599033913047">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599034218816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599033913047" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599034218816" />
     <state x="320" y="0" key="new project wizard" timestamp="1599030362645">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
