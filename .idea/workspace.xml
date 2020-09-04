@@ -6,8 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change afterPath="$PROJECT_DIR$/HomeTask3/Test1/Phone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,24 +38,31 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3" />
       <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3\src" />
+      <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test10">
-    <configuration name="Test10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test10" />
-      <module name="IvanK" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test1.Main" />
+      <module name="HomeTask3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test6" />
+    <configuration name="Test10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test10" />
       <module name="IvanK" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -84,11 +91,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test10" />
         <item itemvalue="Application.Test9" />
         <item itemvalue="Application.Test8" />
         <item itemvalue="Application.Test7" />
-        <item itemvalue="Application.Test6" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599047203130</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="sozdal klass Phone i main">
+      <created>1599217952272</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1599217952272</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -226,7 +240,8 @@
     <MESSAGE value="Test7.java ready" />
     <MESSAGE value="Test8.java ready" />
     <MESSAGE value="Test10.java ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test10.java ready" />
+    <MESSAGE value="sozdal klass Phone i main" />
+    <option name="LAST_COMMIT_MESSAGE" value="sozdal klass Phone i main" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1599217167994">
@@ -249,26 +264,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599045379204" />
+    <state x="429" y="215" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599217512378">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="429" y="215" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1599217512378" />
     <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1599216951805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599048217875">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599220117397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599048217875" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599048217872">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599220117397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599048217872" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599048217872">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599220117397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599048217872" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599048217875">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599220117397">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599048217875" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1599031458147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -277,10 +296,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599047207028">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599219917725">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599047207028" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599219917725" />
     <state x="320" y="0" key="new project wizard" timestamp="1599217106464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
