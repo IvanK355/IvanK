@@ -18,13 +18,18 @@ public class Animal {
 
 class Dog extends Animal{
 
-    public Dog(String food, String location) {
+        public Dog(String food, String location) {
         super(food, location);
     }
 
     @Override
     void makeNoise() {
         System.out.println("Dog животное спит");
+    }
+
+    @Override
+    void eat() {
+        System.out.println("Dog животное ест");
     }
 }
 
@@ -36,7 +41,12 @@ class Cat extends Animal{
 
     @Override
     void makeNoise(){
-        System.out.println("Cat животное спит");
+        System.out.println(this.getClass().getName()+"животное спит");
+    }
+
+    @Override
+    void eat() {
+        System.out.println(this.getClass().getName()+"животное ест");
     }
 }
 
@@ -49,6 +59,11 @@ class Horse extends Animal{
     @Override
     void makeNoise(){
         System.out.println("Horse животное спит");
+    }
+
+    @Override
+    void eat() {
+        super.eat();
     }
 }
 
