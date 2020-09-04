@@ -30,5 +30,9 @@ public class Main {
         System.out.println(iphone.number+" "+iphone.model+" "+iphone.weight);
         System.out.println(samsung.number+" "+samsung.model+" "+samsung.weight);
         System.out.println(xiaomi.number+" "+xiaomi.model+" "+xiaomi.weight);
+
+        Phone.sendMessage(1, 2, 3);
+
+
     }
 }
