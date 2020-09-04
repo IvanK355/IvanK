@@ -8,6 +8,7 @@
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test1/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test1/Phone.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +207,21 @@
       <option name="project" value="LOCAL" />
       <updated>1599217952272</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Выполнил пункты 1 и 2 тестового задания 1">
+      <created>1599220593705</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1599220593705</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Выполнил пункты 1 и 2 тестового задания 1">
+      <created>1599220670491</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1599220670491</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,7 +256,9 @@
     <MESSAGE value="Test8.java ready" />
     <MESSAGE value="Test10.java ready" />
     <MESSAGE value="sozdal klass Phone i main" />
-    <option name="LAST_COMMIT_MESSAGE" value="sozdal klass Phone i main" />
+    <MESSAGE value="Выполнил пункты 1,2,3 тестового задания 1" />
+    <MESSAGE value="Выполнил пункты 1 и 2 тестового задания 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Выполнил пункты 1 и 2 тестового задания 1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="163" y="0" key="#Project_Structure" timestamp="1599217167994">
@@ -256,6 +273,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599216744133" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1599222380473">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599222380473" />
     <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599030389309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -272,22 +293,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599220117397">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom" timestamp="1599222620152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
-    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599220117397">
+    <state width="1286" height="163" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599222620152" />
+    <state width="1286" height="163" key="GridCell.Tab.0.center" timestamp="1599222620152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
-    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599220117397">
+    <state width="1286" height="163" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599222620152" />
+    <state width="1286" height="163" key="GridCell.Tab.0.left" timestamp="1599222620152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
-    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599220117397">
+    <state width="1286" height="163" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599222620152" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right" timestamp="1599222620152">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599220117397" />
+    <state width="1286" height="163" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599222620152" />
     <state x="144" y="0" key="SettingsEditor" timestamp="1599031458147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -296,10 +317,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599219917725">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599220656518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599219917725" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599220656518" />
     <state x="320" y="0" key="new project wizard" timestamp="1599217106464">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
