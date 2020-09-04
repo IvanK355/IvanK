@@ -34,9 +34,8 @@ public class Phone {
         System.out.println("Звонит " + nameAbonent + " номер телефона " + telNumberAbonent);
     }
 
-    // Метод vaTest() допускает переменное число аргументов
     public static void sendMessage(int... v) {
-        System.out.println("Кол-во номеров: " + v.length);
+        System.out.println("Кол-во тел номеров: " + v.length);
         System.out.println("Телефон: ");
 
         for (int i = 0; i < v.length; i++) {
