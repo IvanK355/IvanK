@@ -70,7 +70,7 @@ class Horse extends Animal{
 class Veterinar {
 
     public static void treatAnimal(Animal animal){
-        System.out.println(animal.getClass().getName()+" "+animal.food+" "+animal.location);
+        System.out.println(animal.getClass().getTypeName()+" "+animal.food+" "+animal.location);
     }
 }
 
