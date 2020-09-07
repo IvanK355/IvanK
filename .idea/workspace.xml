@@ -6,11 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change afterPath="$PROJECT_DIR$/HomeTask3/src/Test3/Aspirant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask3/src/Test3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask3/src/Test3/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test2/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test2/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test10.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test9.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test9.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +53,7 @@
       <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Test4">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test2.Main" />
       <module name="HomeTask3" />
@@ -97,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test9" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test9" />
+    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test4" />
       <module name="IvanK" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -106,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test4" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test10" />
-        <item itemvalue="Application.Test9" />
       </list>
     </recent_temporary>
   </component>

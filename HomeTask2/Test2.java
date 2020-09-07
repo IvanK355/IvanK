@@ -9,7 +9,7 @@ public class Test2 {
         int triigit = s % 10;
         int secdigit = s / 10 % 10;
         int fstdigit = s / 100;
-        System.out.println(triigit+secdigit+fstdigit);
+        System.out.println(triigit + secdigit + fstdigit);
 
     }
 }
