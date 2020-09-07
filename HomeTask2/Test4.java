@@ -4,8 +4,11 @@ import java.io.InputStreamReader;
 
 public class Test4 {
     public static void main(String[] args) throws IOException {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         int s = Integer.parseInt(reader.readLine());
+
         if (s > 0) {
             s++;
         } else if (s == 0) {
@@ -13,6 +16,7 @@ public class Test4 {
         } else {
             s -= 2;
         }
+
         System.out.println(s);
     }
 }

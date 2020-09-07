@@ -4,10 +4,12 @@ import java.io.InputStreamReader;
 
 public class Test1 {
     public static void main(String[] args) throws IOException {
+
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
         int s = Integer.parseInt(reader.readLine());
         int lastdigit = s % 10;
+
         System.out.println(lastdigit);
     }
-
 }
