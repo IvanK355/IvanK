@@ -1,16 +1,26 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Arrays;
+
 
 public class Test5 {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int min;
         int[] s = new int[3];
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         s[0] = Integer.parseInt(reader.readLine());
         s[1] = Integer.parseInt(reader.readLine());
         s[2] = Integer.parseInt(reader.readLine());
-        Arrays.sort(s);
-        System.out.println(s[0]);
+
+        min = s[0];
+
+        for (int i = 1; i < s.length; i++) {
+            if (s[i] < min) {
+                min = s[i];
+            }
+        }
+
+        System.out.println(min);
     }
 }
