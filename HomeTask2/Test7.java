@@ -4,13 +4,16 @@ import java.io.InputStreamReader;
 
 public class Test7 {
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        int codeGoroda = Integer.parseInt(reader.readLine());
+
         int minutedur = 10;
         double moscost = 4.15;
         double rostovcost = 1.98;
         double krasnodarcost = 2.69;
         double kirovcost = 5.0;
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        int codeGoroda = Integer.parseInt(reader.readLine());
+
 
         switch (codeGoroda) {
             case (905) -> System.out.println("Москва. Стоимость разговора:" + minutedur * moscost);

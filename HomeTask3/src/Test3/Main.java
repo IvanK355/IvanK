@@ -9,6 +9,7 @@ public class Main {
         students[1] = new Aspirant();
 
         for (int i = 0; i < 2; i++) {
+
             System.out.println(students[i].getScholarship(student.averageMark));
         }
     }

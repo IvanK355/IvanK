@@ -8,8 +8,10 @@ public class Test8 {
         int chetneg = 0;
         int kolpol = 0;
         int kolneg = 0;
-        Arrays.sort(array);
         int arraylenght = array.length;
+
+        Arrays.sort(array);
+
         for (int j : array) {
             if ((j < 0) && (j % 2 == 0)) {
                 chetneg += j;
@@ -22,6 +24,7 @@ public class Test8 {
                 kolneg++;
             }
         }
+
         System.out.println(array[arraylenght - 1]);
         System.out.println(pol);
         System.out.println(chetneg);
