@@ -9,9 +9,9 @@ public class Test5 {
         int[] s = new int[3];
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        s[0] = Integer.parseInt(reader.readLine());
-        s[1] = Integer.parseInt(reader.readLine());
-        s[2] = Integer.parseInt(reader.readLine());
+        for (int i = 0; i < 3; i++) {
+            s[i] = Integer.parseInt(reader.readLine());
+        }
 
         min = s[0];
 

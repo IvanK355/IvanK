@@ -10,11 +10,11 @@ public class Test2 {
         String str = reader.readLine();
 
         char[] result = str.toCharArray();
-        int[] cyfra = new int[str.length()];
+        int[] number = new int[str.length()];
 
         for (int i = 0; i < str.length(); i++) {
-            cyfra[i] = Integer.parseInt(String.valueOf(result[i]));
-            sum += cyfra[i];
+            number[i] = Integer.parseInt(String.valueOf(result[i]));
+            sum += number[i];
         }
 
         System.out.println(sum);

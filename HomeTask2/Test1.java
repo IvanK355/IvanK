@@ -8,8 +8,8 @@ public class Test1 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         int s = Integer.parseInt(reader.readLine());
-        int lastdigit = s % 10;
+        int lastNumber = s % 10;
 
-        System.out.println(lastdigit);
+        System.out.println(lastNumber);
     }
 }

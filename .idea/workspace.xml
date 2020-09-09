@@ -7,17 +7,11 @@
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask2/Test10.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test10.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask2/Test5.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask2/Test7.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test7.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask2/Test8.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask2/Test9.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test9.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test1/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test1/Phone.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test1/Phone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test2/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test2/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test2/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test3/Aspirant.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test3/Aspirant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask3/src/Test3/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask3/src/Test3/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +51,7 @@
       <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test10">
+  <component name="RunManager" selected="Application.Test7">
     <configuration name="Test10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test10" />
       <module name="IvanK" />
@@ -67,13 +61,6 @@
     </configuration>
     <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test2" />
-      <module name="IvanK" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test4" />
       <module name="IvanK" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -93,13 +80,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test7" />
+      <module name="IvanK" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test10" />
+        <item itemvalue="Application.Test7" />
         <item itemvalue="Application.Test6" />
+        <item itemvalue="Application.Test10" />
         <item itemvalue="Application.Test5" />
         <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test4" />
       </list>
     </recent_temporary>
   </component>
@@ -402,22 +396,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1599459590542">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1599628966861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599459590542" />
-    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1599459590542">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599628966861" />
+    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1599628966861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599459590542" />
-    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1599459590542">
+    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599628966861" />
+    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1599628966861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599459590542" />
-    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1599459590542">
+    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599628966861" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1599628966861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599459590542" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599628966861" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
