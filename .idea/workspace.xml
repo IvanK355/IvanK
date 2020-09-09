@@ -6,8 +6,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
+      <change afterPath="$PROJECT_DIR$/HomeTask4/HomeTask4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Shape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Triangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask2/Test6.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask2/Test6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -47,16 +54,22 @@
       <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Test6">
-    <configuration name="Test10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test10" />
-      <module name="IvanK" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Task1.Main" />
+      <module name="HomeTask4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Task1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test2" />
+    <configuration name="Test10" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test10" />
       <module name="IvanK" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -85,11 +98,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Test6" />
         <item itemvalue="Application.Test7" />
         <item itemvalue="Application.Test10" />
         <item itemvalue="Application.Test5" />
-        <item itemvalue="Application.Test2" />
       </list>
     </recent_temporary>
   </component>
@@ -305,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599629744434</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Исправление camelCase _ исключение транслитерации1">
+      <created>1599630161679</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1599630161679</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -327,7 +347,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Compi" />
     <MESSAGE value="Test1 ready" />
     <MESSAGE value="Test2.java ready" />
     <MESSAGE value="Test3.java ready" />
@@ -352,7 +371,8 @@
     <MESSAGE value="исправил 5 задаение" />
     <MESSAGE value="исправил 6 задаение" />
     <MESSAGE value="Исправление camelCase _ исключение транслитерации" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправление camelCase _ исключение транслитерации" />
+    <MESSAGE value="Исправление camelCase _ исключение транслитерации1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправление camelCase _ исключение транслитерации1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1599230853514">
@@ -367,18 +387,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599030927265" />
-    <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599292186898">
+    <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599639317415">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599292186898" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1599302424041">
+    <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599639317415" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1599640897487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599302424041" />
-    <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599030389309">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1599640897487" />
+    <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1599639387724">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1599030389309" />
+    <state x="404" y="56" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1366.728@0.0.1366.728" timestamp="1599639387724" />
     <state x="466" y="239" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599227840897">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -399,22 +419,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1599629991145">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1599640379870">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599629991145" />
-    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1599629991145">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1599640379870" />
+    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1599640379870">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599629991145" />
-    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1599629991145">
+    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1599640379870" />
+    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1599640379867">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599629991145" />
-    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1599629991145">
+    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1599640379867" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1599640379870">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599629991145" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1599640379870" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -427,18 +447,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599630083786">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599630162855">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599630083786" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599630162855" />
     <state x="413" y="131" key="extract.method.dialog" timestamp="1599224726317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="131" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1599224726317" />
-    <state x="320" y="0" key="new project wizard" timestamp="1599217106464">
+    <state x="320" y="0" key="new project wizard" timestamp="1599639419163">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="320" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1599217106464" />
+    <state x="320" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1599639419163" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1599034128055">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
