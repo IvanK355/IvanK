@@ -4,28 +4,28 @@ import java.io.InputStreamReader;
 
 public class Test6 {
     public static void main(String[] args) throws IOException {
-        String plusminus;
-        String chetnecet;
+        String positiveNegativeNumber;
+        String oddEvenNumber;
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int s = Integer.parseInt(reader.readLine());
 
         if (s > 0) {
-            plusminus = "положительное";
+            positiveNegativeNumber = "положительное";
         } else {
-            plusminus = "отрицательное";
+            positiveNegativeNumber = "отрицательное";
         }
 
         if (s % 2 == 0) {
-            chetnecet = "четное";
+            oddEvenNumber = "четное";
         } else {
-            chetnecet = "нечетное";
+            oddEvenNumber = "нечетное";
         }
 
         if (s == 0) {
             System.out.println("нулевое число");
         } else {
-            System.out.println(s + " " + plusminus + " " + chetnecet + " число");
+            System.out.println(s + " " + positiveNegativeNumber + " " + oddEvenNumber + " число");
         }
     }
 }
