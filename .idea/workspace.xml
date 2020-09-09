@@ -5,13 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task2/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task2/Engine.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task2/Lorry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask4/src/Task2/SportCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -336,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599641589060</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="ДЗ4 Тест 2 Сделан">
+      <created>1599648267039</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1599648267039</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,7 +359,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Test4.java ready" />
     <MESSAGE value="Test5.java ready" />
     <MESSAGE value="Test6.java ready" />
     <MESSAGE value="Test7.java ready" />
@@ -383,7 +383,8 @@
     <MESSAGE value="ДЗ4 Тест 1 сделано" />
     <MESSAGE value="ДЗ4 Тест 1 сделано 1" />
     <MESSAGE value="ДЗ4 Тест 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ4 Тест 2" />
+    <MESSAGE value="ДЗ4 Тест 2 Сделан" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ4 Тест 2 Сделан" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1599230853514">
@@ -458,10 +459,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599645054031">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1599648334293">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599645054031" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1599648334293" />
     <state x="413" y="131" key="extract.method.dialog" timestamp="1599224726317">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
