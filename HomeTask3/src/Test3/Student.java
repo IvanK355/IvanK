@@ -4,7 +4,7 @@ public class Student {
 
 
     private String firstName, lastName, group;
-    public double averageMark = 4.0;
+    private double averageMark;
 
     public int getScholarship(double averageMark) {
 
