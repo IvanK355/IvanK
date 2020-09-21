@@ -10,7 +10,7 @@ public class Main {
 
         for (int i = 0; i < 2; i++) {
 
-            System.out.println(students[i].getScholarship(student.averageMark));
+            System.out.println(students[i].getScholarship(students[i].averageMark));
         }
     }
 }

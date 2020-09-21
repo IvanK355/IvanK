@@ -2,7 +2,7 @@ package Test3;
 
 public class Aspirant extends Student {
 
-    Boolean scienceWork = true;
+    private boolean scienceWork = true;
 
     @Override
     public int getScholarship(double averageMark) {
@@ -12,5 +12,13 @@ public class Aspirant extends Student {
         } else {
             return 180;
         }
+    }
+
+    public boolean isScienceWork() {
+        return scienceWork;
+    }
+
+    public void setScienceWork(boolean scienceWork) {
+        this.scienceWork = scienceWork;
     }
 }
