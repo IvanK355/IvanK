@@ -2,11 +2,11 @@ package Test1;
 
 public class Phone {
 
-    int number;
-    String model;
-    double weight;
-    String nameAbonent;
-    int telNumberAbonent;
+    public int number;
+    public String model;
+    public double weight;
+    public String nameAbonent;
+    public int telNumberAbonent;
 
     public Phone(int number, String model, double weight) {
 
@@ -23,6 +23,9 @@ public class Phone {
     }
 
     public Phone() {
+        number = 555666;
+        model = "PhoneX5";
+        weight = 87;
     }
 
     public void receiveCall(String nameAbonent) {
