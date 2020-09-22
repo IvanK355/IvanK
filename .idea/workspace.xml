@@ -5,10 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task1/Calcus.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task1/Calcus.java" afterDir="false" />
-    </list>
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -419,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600758694235</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="5 DZ final2 - оказалось не так сложно )">
+      <created>1600761965340</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1600761965340</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -441,7 +445,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Выполнил пункты 1 и 2 тестового задания 1" />
     <MESSAGE value="Выполнил пункты 1-9 тестового задания 1" />
     <MESSAGE value="Создал метод sendMessage" />
     <MESSAGE value="Task2" />
@@ -466,7 +469,8 @@
     <MESSAGE value="Корректировка 3 задания v1" />
     <MESSAGE value="5 DZ v1" />
     <MESSAGE value="5 DZ v1 добавлен Calcus" />
-    <option name="LAST_COMMIT_MESSAGE" value="5 DZ v1 добавлен Calcus" />
+    <MESSAGE value="5 DZ final2 - оказалось не так сложно )" />
+    <option name="LAST_COMMIT_MESSAGE" value="5 DZ final2 - оказалось не так сложно )" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1600672025813">
@@ -517,22 +521,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1600760526658">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1600761781584">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600760526658" />
-    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1600760526658">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
+    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1600761781584">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600760526658" />
-    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1600760526658">
+    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
+    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1600761781584">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600760526658" />
-    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1600760526658">
+    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1600761781584">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600760526658" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -545,10 +549,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600758696074">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600761967907">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600758696074" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600761967907" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
