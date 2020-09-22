@@ -42,36 +42,37 @@ public class Calcus {
         switch (c) {
             case "*": {
                 factory = new ConsoleLoggerFactory();
-                s = "Умножили " + a + " на " + b;
+
                 d = a * b;
+                s = "Умножили " + a + " на " + b + ". Результат = " + d;
                 break;
             }
             case "+": {
                 factory = new DbLoggerFactory();
-                s = "Суммировали " + a + " и " + b;
                 d = a + b;
+                s = "Суммировали " + a + " и " + b + ". Результат = " + d;
                 break;
             }
             case "-": {
                 factory = new FileLoggerFactory();
-                s = "Вычитание от " + a + " " + b;
                 d = a - b;
+                s = "Вычитание от " + a + " " + b + ". Результат = " + d;
                 break;
             }
             case "/": {
                 factory = new ConsoleLoggerFactory();
-                s = "Разделили " + a + " на " + b;
                 d = a / b;
+                s = "Разделили " + a + " на " + b + ". Результат = " + d;
                 break;
             }
             default: {
                 factory = new ConsoleLoggerFactory();
-                s = "Не было никакой операции";
                 d = 0;
+                s = "Не было никакой операции";
                 break;
             }
         }
-        if(factory != null){
+        if (factory != null) {
             Logger logger = factory.creatLogger();
             logger.log(s);
         }
