@@ -35,41 +35,36 @@ public class Calcus {
 
     }
 
-    private static int calculation(int a, int b, String c) {
-        int d;
-        String s = null;
+    private static double calculation(int a, int b, String c) {
+        double d;
+        String s;
         LoggerFactory factory = null;
         switch (c) {
-            case "*": {
+            case "*" -> {
                 factory = new ConsoleLoggerFactory();
 
                 d = a * b;
                 s = "Умножили " + a + " на " + b + ". Результат = " + d;
-                break;
             }
-            case "+": {
+            case "+" -> {
                 factory = new DbLoggerFactory();
                 d = a + b;
                 s = "Суммировали " + a + " и " + b + ". Результат = " + d;
-                break;
             }
-            case "-": {
+            case "-" -> {
                 factory = new FileLoggerFactory();
                 d = a - b;
                 s = "Вычитание от " + a + " " + b + ". Результат = " + d;
-                break;
             }
-            case "/": {
+            case "/" -> {
                 factory = new ConsoleLoggerFactory();
-                d = a / b;
+                d = a * 1.0 / b;
                 s = "Разделили " + a + " на " + b + ". Результат = " + d;
-                break;
             }
-            default: {
+            default -> {
                 factory = new ConsoleLoggerFactory();
                 d = 0;
                 s = "Не было никакой операции";
-                break;
             }
         }
         if (factory != null) {
