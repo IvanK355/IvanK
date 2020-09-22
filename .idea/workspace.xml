@@ -5,7 +5,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -423,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600761965340</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="5 DZ final2 - оказалось не так сложно )">
+      <created>1600762013916</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1600762013916</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,22 +530,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1600761781584">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1600761986023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
-    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1600761781584">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600761986023" />
+    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1600761986023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
-    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1600761781584">
+    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600761986023" />
+    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1600761986023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
-    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1600761781584">
+    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600761986023" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1600761986023">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600761781584" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600761986023" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -549,10 +558,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600761967907">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600762039923">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600761967907" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600762039923" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
