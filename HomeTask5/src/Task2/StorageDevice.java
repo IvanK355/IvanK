@@ -3,14 +3,14 @@ package Task2;
 public class StorageDevice {
     private String sdMemory;
     private String sdFormFactor;
-    private String[] sdType= new String[2];
-    private String sdMaker ;
+    private String[] sdType = new String[2];
+    private String sdMaker;
 
     public StorageDevice() {
         this.sdMemory = "160 Gb";
         this.sdFormFactor = "CFF";
-        this.sdType[0]= "HDD";
-        this.sdType[1]= "SSD";
+        this.sdType[0] = "HDD";
+        this.sdType[1] = "SSD";
         this.sdMaker = "IBM";
     }
 
