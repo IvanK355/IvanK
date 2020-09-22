@@ -2,16 +2,24 @@ package Task2;
 
 public class Cpu {
 
-    private String cpuClockFrequency = "3.2 GHz";
-    private int cpuQtyCore = 7;
-    private String cpuCacheMemory = "1 Gb";
-    private String cpuName = "Core";
-    private String cpuMaker = "Intel";
+    private String cpuClockFrequency;
+    private int cpuQtyCore;
+    private String cpuCacheMemory;
+    private String cpuName;
+    private String cpuMaker;
+
+    public Cpu() {
+        this.cpuClockFrequency = "3.2 GHz";
+        this.cpuQtyCore = 7;
+        this.cpuCacheMemory = "1 Gb";
+        this.cpuName = "Core";
+        this.cpuMaker = "Intel";
+    }
 
     public void getInfo() {
         System.out.println("Характеристика процессора");
         System.out.println(
-                        "тактовая чистота " + cpuClockFrequency + "\n" +
+                "тактовая частота " + cpuClockFrequency + "\n" +
                         "кол-во ядер " + cpuQtyCore + "\n" +
                         "кеш память " + cpuCacheMemory + "\n" +
                         "название " + cpuName + "\n" +

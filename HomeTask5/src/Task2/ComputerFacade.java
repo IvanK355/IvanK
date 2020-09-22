@@ -18,5 +18,9 @@ public class ComputerFacade {
 
     public void info() {
         cpu.getInfo();
+        ram.getInfo();
+        monitor.getInfo();
+        videoCard.getInfo();
+        storageDevice.getInfo();
     }
 }
