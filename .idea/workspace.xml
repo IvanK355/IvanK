@@ -7,12 +7,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/ComputerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/ComputerFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/Cpu.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/Cpu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/Monitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/Monitor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/Ram.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/Ram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/StorageDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/StorageDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/VideoCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/VideoCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask4/src/Task1/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask4/src/Task1/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask4/src/Task1/Shape.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Shape.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask4/src/Task1/Triangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask4/src/Task1/Triangle.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,7 @@
       <recent name="D:\Users\Ivan.Kiryukhin\IdeaProjects\IvanK\HomeTask3" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (3)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Calcus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task1.Calcus" />
       <module name="HomeTask5" />
@@ -129,9 +127,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application.Calcus" />
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
       </list>
@@ -461,7 +459,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600774027097</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="5 DZ task 2 v2">
+      <created>1600778071767</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1600778071767</updated>
+    </task>
+    <task id="LOCAL-00047" summary="5 DZ task 2 v2">
+      <created>1600778162237</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1600778162237</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -483,7 +495,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Создал метод sendMessage" />
     <MESSAGE value="Task2" />
     <MESSAGE value="Task2 vet" />
     <MESSAGE value="Task2 ready" />
@@ -508,7 +519,8 @@
     <MESSAGE value="5 DZ v1 добавлен Calcus" />
     <MESSAGE value="5 DZ final2 - оказалось не так сложно )" />
     <MESSAGE value="5 DZ task 2 v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="5 DZ task 2 v1" />
+    <MESSAGE value="5 DZ task 2 v2" />
+    <option name="LAST_COMMIT_MESSAGE" value="5 DZ task 2 v2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1600672025813">
@@ -527,10 +539,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599639317415" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1600777037460">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1600843853094">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600777037460" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600843853094" />
     <state x="412" y="163" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600671483784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -559,22 +571,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1600777854500">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom" timestamp="1600845314002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600777854500" />
-    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1600777854499">
+    <state width="1286" height="161" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600845314002" />
+    <state width="1286" height="161" key="GridCell.Tab.0.center" timestamp="1600845314002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600777854499" />
-    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1600777854499">
+    <state width="1286" height="161" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600845314002" />
+    <state width="1286" height="161" key="GridCell.Tab.0.left" timestamp="1600845314002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600777854499" />
-    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1600777854500">
+    <state width="1286" height="161" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600845314002" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right" timestamp="1600845314002">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600777854500" />
+    <state width="1286" height="161" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600845314002" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -587,10 +599,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600774032456">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600778166923">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600774032456" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600778166923" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -607,10 +619,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="320" y="0" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1600691930380" />
-    <state x="383" y="118" key="refactoring.ChangeSignatureDialog" timestamp="1600689476899">
+    <state x="383" y="118" key="refactoring.ChangeSignatureDialog" timestamp="1600843432704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="383" y="118" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1600689476899" />
+    <state x="383" y="118" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1600843432704" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1600774378544">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

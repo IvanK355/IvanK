@@ -2,8 +2,6 @@ package Task1;
 
 public interface Shape {
 
-    default int square() {
+    double square();
 
-        return 5;
-    }
 }
