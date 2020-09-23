@@ -1,22 +1,29 @@
 package Task2;
 
 public abstract class Car {
-    public String carModel;
-    public String carClass;
-    public int carWeigth;
-    public Engine carEngine;
+    String carModel;
+    String carClass;
+    int carWeigth;
+    Engine engine;
 
-    public abstract String start();
+    Car(String carModel, String carClass, int carWeigth, Engine engine) {
+        this.carModel = carModel;
+        this.carClass = carClass;
+        this.carWeigth = carWeigth;
+        this.engine = engine;
+    }
 
-    public abstract String stop();
+    abstract void start();
 
-    public abstract void printInfo();
+    abstract void stop();
 
-    public void turnRight() {
+    abstract void printInfo();
+
+    void turnRight() {
         System.out.println("Поворот направо");
     }
 
-    public void turnLeft() {
+    void turnLeft() {
         System.out.println("Поворот налево");
     }
 }
