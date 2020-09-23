@@ -9,23 +9,13 @@ public class SportCar extends Car {
         this.topSpeed = topSpeed;
     }
 
-
-    public int getTopSpeed() {
-        return topSpeed;
-    }
-
-    public void setTopSpeed(int topSpeed) {
-        this.topSpeed = topSpeed;
-    }
-
-
     @Override
     public void printInfo() {
 
         System.out.println("Марка автомобиля: " + carModel);
         System.out.println("Класс автомобиля: " + carClass);
         System.out.println("Вес автомобиля: " + carWeigth);
-        System.out.println("Предельная скорость: " + getTopSpeed());
+        System.out.println("Предельная скорость: " + topSpeed);
         System.out.println("Мощность двигателя : " + engine.getCapacity());
         System.out.println("Произодитель двигателя: " + engine.getMaker());
         System.out.println();
