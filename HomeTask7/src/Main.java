@@ -45,13 +45,18 @@ public class Main {
             case ("deposit") -> {
                 accountId = Integer.parseInt(array[1]);
                 amount = Integer.parseInt(array[2]);
+                System.out.println("Счет " + accounts[accountId].getId());
+                System.out.println("Владелец счета " + accounts[accountId].getHolder());
                 AccountService.deposit(accountId, amount);
             }
             case ("transfer") -> {
                 from = Integer.parseInt(array[1]);
                 to = Integer.parseInt(array[2]);
                 amount = Integer.parseInt(array[3]);
-                // System.out.println("Перевели со счета" + accounts[from].getId() + );
+                System.out.println("Перевод со счета: " + accounts[from].getId());
+                System.out.println("Отправитель " + accounts[from].getHolder());
+                System.out.println("Перевод на счет " + accounts[to].getId());
+                System.out.println("Получатель " + accounts[to].getHolder());
                 AccountService.transfer(from, to, amount);
             }
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);

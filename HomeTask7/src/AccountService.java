@@ -58,6 +58,9 @@ public class AccountService {
             last = current;
         }
         newAmount = Integer.parseInt(last) + amount;
+        System.out.println("Баланс счета до внесения депозита: " + last);
+        System.out.println("Сумма депозита: " + amount);
+        System.out.println("Баланс счета после внесения депозита: " + newAmount);
 
         BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
         writer.write("\n" + newAmount);
@@ -72,12 +75,15 @@ public class AccountService {
 
         String fromAccount = "HomeTask7\\" + from + ".txt";
         String toAccount = "HomeTask7\\" + to + ".txt";
+        String currentFrom;
+        String lastFrom = null;
 
         BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(fromAccount));
-        while ((current = bufferedReaderFrom.readLine()) != null) {
-            last = current;
+
+        while ((currentFrom = bufferedReaderFrom.readLine()) != null) {
+            lastFrom = currentFrom;
         }
-        newAmountFrom = Integer.parseInt(last) - amount;
+        newAmountFrom = Integer.parseInt(lastFrom) - amount;
 
         BufferedWriter writer = Files.newBufferedWriter(Path.of(fromAccount), StandardOpenOption.APPEND);
         writer.write("\n" + newAmountFrom);
@@ -93,5 +99,13 @@ public class AccountService {
         BufferedWriter writerTo = Files.newBufferedWriter(Path.of(toAccount), StandardOpenOption.APPEND);
         writerTo.write("\n" + newAmountTo);
         writerTo.close();
+
+        System.out.println("Баланс счета отправителя до перевода: " + lastFrom);
+        System.out.println("Сумма перевода: " + amount);
+        System.out.println("Баланс счета отправителя после перевода: " + newAmountFrom);
+
+        System.out.println("Баланс счета получателя до перевода: " + last);
+        System.out.println("Сумма перевода: " + amount);
+        System.out.println("Баланс счета получателя после перевода: " + newAmountTo);
     }
 }
