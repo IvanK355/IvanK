@@ -5,50 +5,41 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int accountId, to, from, amount;
         int qtyAccounts = 10;
-        Account j;
 
-        try {
-            for (int i = 1; i < (qtyAccounts + 1); i++) {
+        Account[] accounts = new Account[qtyAccounts + 1];
 
-                j = new Account(i, "Holder" + i);
+        for (int i = 1; i < (qtyAccounts + 1); i++) {
 
-                String path = "HomeTask7\\" + i + ".txt";
-                File file = new File(path);
-                // If file doesn't exists, then create it
-                if (!file.exists()) {
-                    file.createNewFile();
+            accounts[i] = new Account(i, ("Holder" + i));
 
-                    FileWriter fw = new FileWriter("HomeTask7\\" + i + ".txt");
-                    BufferedWriter bw = new BufferedWriter(fw);
+            String path = "HomeTask7\\" + i + ".txt";
+            File file = new File(path);
+            if (!file.exists()) {
+                file.createNewFile();
 
-                    // Write in file
-                    bw.write(String.valueOf(0));
-
-                    // Close connection
-                    bw.close();
-
-                }
+                FileWriter fw = new FileWriter("HomeTask7\\" + i + ".txt");
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(String.valueOf(0));
+                bw.close();
             }
-        } catch (Exception e) {
-            System.out.println(e);
         }
-
 
         String s = reader.readLine();
         String[] array = s.split("\\W");
 
-        for (String x : array) {
-            System.out.println(x);
-        }
-
         switch (array[0]) {
             case ("balance") -> {
                 accountId = Integer.parseInt(array[1]);
+                System.out.println("Счет " + accounts[accountId].getId());
+                System.out.println("Владелец счета " + accounts[accountId].getHolder());
+                System.out.print("Баланс счета ");
                 AccountService.balance(accountId);
             }
             case ("withdraw") -> {
                 accountId = Integer.parseInt(array[1]);
                 amount = Integer.parseInt(array[2]);
+                System.out.println("Счет " + accounts[accountId].getId());
+                System.out.println("Владелец счета " + accounts[accountId].getHolder());
                 AccountService.withdraw(accountId, amount);
             }
             case ("deposit") -> {
@@ -60,11 +51,12 @@ public class Main {
                 from = Integer.parseInt(array[1]);
                 to = Integer.parseInt(array[2]);
                 amount = Integer.parseInt(array[3]);
+                // System.out.println("Перевели со счета" + accounts[from].getId() + );
                 AccountService.transfer(from, to, amount);
             }
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
         }
+
+
     }
-
-
 }

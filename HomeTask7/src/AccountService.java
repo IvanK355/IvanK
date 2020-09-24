@@ -8,10 +8,8 @@ public class AccountService {
     private static String last;
     private static int newAmount;
 
-
-    static void withdraw(int accountId, int amount) throws
+   static void withdraw(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
-
 
         String p = "HomeTask7\\" + accountId + ".txt";
 
@@ -19,13 +17,15 @@ public class AccountService {
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
-
+        System.out.println("Баланс счета до снятия наличных: " + last);
+        System.out.println("Сумма снятия: " + amount);
 
         try {
             newAmount = Integer.parseInt(last) - amount;
             if (newAmount < 0) {
-                throw new NotEnoughMoneyException("Недостаточно стредств на счете");
+                throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
             }
+            System.out.print("Баланс счета после снятия наличных: " + newAmount);
             BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
             writer.write("\n" + newAmount);
             writer.close();
@@ -33,18 +33,14 @@ public class AccountService {
                 NumberFormatException e) {
             e.printStackTrace();
 
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-
     static void balance(int accountId) throws UnknownAccountException, IOException {
 
         String p = "HomeTask7\\" + accountId + ".txt";
-
-        System.out.println("Баланс Счета: " + accountId);
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
         while ((current = bufferedReader.readLine()) != null) {
