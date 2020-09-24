@@ -1,19 +1,20 @@
 public class AccountService {
-    void withdraw(int accountId, int amount) throws
+    static void withdraw(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException {
 
     }
 
-    void balance(int accountId) throws UnknownAccountException {
-
+    static void balance(int accountId) throws UnknownAccountException {
+        System.out.println("Баланс Счета: " + accountId);
+        System.out.println("1000 USD");
     }
 
-    void deposit(int accountId, int amount) throws
+    static void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException {
 
     }
 
-    void transfer(int from, int to, int amount) throws
+    static void transfer(int from, int to, int amount) throws
             NotEnoughMoneyException, UnknownAccountException {
 
     }
