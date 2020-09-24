@@ -3,10 +3,9 @@ public class Account {
     private String holder;
     private int amount;
 
-    public Account(int id, String holder, int amount) {
-        this.id = id;
-        this.holder = holder;
-        this.amount = amount;
+    public Account(int i, String s) {
+        this.id = i;
+        this.holder = s;
     }
 
     public int getId() {

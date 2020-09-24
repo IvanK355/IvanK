@@ -5,19 +5,30 @@ public class Main {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int accountId, to, from, amount;
         int qtyAccounts = 10;
-
-
+        Account j;
 
         try {
             // Create new file
             //String content = "100";
             for (int i = 1; i < (qtyAccounts + 1); i++) {
 
+                j = new Account(i, "Holder"+i);
+
                 String path = "HomeTask7\\"+i + ".txt";
                 File file = new File(path);
                 // If file doesn't exists, then create it
                 if (!file.exists()) {
                     file.createNewFile();
+
+                    FileWriter fw = new FileWriter("HomeTask7\\" + i + ".txt");
+                    BufferedWriter bw = new BufferedWriter(fw);
+
+                    // Write in file
+                    bw.write(String.valueOf(0));
+
+                    // Close connection
+                    bw.close();
+
                 }
             }
         } catch (Exception e) {
@@ -43,7 +54,7 @@ public class Main {
                 amount = Integer.parseInt(array[2]);
                 AccountService.withdraw(accountId, amount);
             }
-            case ("deposite") -> {
+            case ("deposit") -> {
                 accountId = Integer.parseInt(array[1]);
                 amount = Integer.parseInt(array[2]);
                 AccountService.deposit(accountId, amount);
