@@ -1,4 +1,7 @@
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
 
 public class Main {
     public static void main(String[] args) throws IOException, UnknownNameOperationException, UnknownAccountException, NotEnoughMoneyException {
@@ -10,10 +13,9 @@ public class Main {
 
         for (int i = 1; i < (qtyAccounts + 1); i++) {
 
-            accounts[i] = new Account(i, ("Holder_" + i));
-
             String path = "HomeTask7\\" + i + ".txt";
             File file = new File(path);
+
             if (!file.exists()) {
                 file.createNewFile();
                 FileWriter fw = new FileWriter("HomeTask7\\" + i + ".txt");
@@ -21,10 +23,43 @@ public class Main {
                 bw.write(String.valueOf(0));
                 bw.close();
             }
+
+        }
+        String path1 = "HomeTask7\\data.txt";
+
+        File file1 = new File(path1);
+        if (!file1.exists()) {
+            file1.createNewFile();
+
+            file1.createNewFile();
+            FileWriter fw = new FileWriter(path1);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(String.valueOf(1));
+            bw.write("\n" + "Holder_1");
+            bw.close();
+
+            for (int i = 2; i < (qtyAccounts + 1); i++) {
+                BufferedWriter writer = Files.newBufferedWriter(Path.of(path1), StandardOpenOption.APPEND);
+                writer.write("\n" + i);
+                writer.write("\n" + "Holder_" + i);
+                writer.close();
+            }
         }
 
+        BufferedReader br = new BufferedReader(new FileReader(path1));
+
+        for (int i = 1; i < (qtyAccounts + 1); i++) {
+            accounts[i] = new Account(Integer.parseInt(br.readLine()), br.readLine());
+        }
+
+
+          //  System.out.println(accounts[11].getHolder()+" " + accounts[11].getId());
+
+
         String s = reader.readLine();
+
         String[] array = s.split("\\W");
+
 
         switch (array[0]) {
             case ("balance") -> {
