@@ -5,13 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/src/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/src/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,13 +127,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Test8.java ready">
-      <created>1599039152668</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1599039152668</updated>
     </task>
     <task id="LOCAL-00012" summary="Test10.java ready">
       <created>1599046857670</created>
@@ -477,7 +464,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600949347172</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="ДЗ 7 v5">
+      <created>1600952758039</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1600952758042</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -499,7 +493,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ4 Тест 1 сделано" />
     <MESSAGE value="ДЗ4 Тест 1 сделано 1" />
     <MESSAGE value="ДЗ4 Тест 2" />
     <MESSAGE value="ДЗ4 Тест 2 Сделан" />
@@ -524,7 +517,8 @@
     <MESSAGE value="ДЗ 7 v2" />
     <MESSAGE value="ДЗ 7 v3" />
     <MESSAGE value="ДЗ 7 v4" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7 v4" />
+    <MESSAGE value="ДЗ 7 v5" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7 v5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1600849753733">
@@ -575,22 +569,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1600951939089">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1600952413161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600951939089" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1600951939089">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1600952413161" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1600952413161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600951939089" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1600951939089">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1600952413161" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1600952413161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600951939089" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1600951939089">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1600952413161" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1600952413161">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600951939089" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1600952413161" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
