@@ -5,7 +5,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
+      <change afterPath="$PROJECT_DIR$/HomeTask7/src/NotEnoughMoneyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask7/src/UnknownAccountException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask8/src/NotEnoughMoneyException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HomeTask8/src/UnknownAccountException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/src/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +53,7 @@
       <recent name="Test2" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
       <recent name="Task2" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -131,13 +139,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Test2.java ready">
-      <created>1599033905055</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1599033905055</updated>
     </task>
     <task id="LOCAL-00006" summary="Test3.java ready">
       <created>1599034216890</created>
@@ -475,7 +476,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600931050951</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="ДЗ 8">
+      <created>1600931252867</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1600931252867</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -497,7 +505,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="исправил 2 задаение" />
     <MESSAGE value="исправил 5 задаение" />
     <MESSAGE value="исправил 6 задаение" />
     <MESSAGE value="Исправление camelCase _ исключение транслитерации" />
@@ -522,7 +529,8 @@
     <MESSAGE value="Исправление ДЗ 6 часть 1" />
     <MESSAGE value="ДЗ 6 часть 1" />
     <MESSAGE value="ДЗ 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7" />
+    <MESSAGE value="ДЗ 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1600849753733">
@@ -541,10 +549,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599639317415" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1600930258790">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1600932441050">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600930258790" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1600932441050" />
     <state x="412" y="163" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600671483784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -601,10 +609,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600931050995">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1600931252984">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600931050995" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1600931252984" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
