@@ -10,18 +10,43 @@ public class AccountService {
 
 
     static void withdraw(int accountId, int amount) throws
-            NotEnoughMoneyException, UnknownAccountException {
+            NotEnoughMoneyException, UnknownAccountException, IOException {
 
+
+        String p = "HomeTask7\\" + accountId + ".txt";
+
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
+        while ((current = bufferedReader.readLine()) != null) {
+            last = current;
+        }
+
+
+        try {
+            newAmount = Integer.parseInt(last) - amount;
+            if (newAmount < 0) {
+                throw new NotEnoughMoneyException("Недостаточно стредств на счете");
+            }
+            BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
+            writer.write("\n" + newAmount);
+            writer.close();
+        } catch (
+                NumberFormatException e) {
+            e.printStackTrace();
+
+        } catch (
+                IOException e) {
+            e.printStackTrace();
+        }
     }
+
 
     static void balance(int accountId) throws UnknownAccountException, IOException {
 
-        if (accountId < 1 && accountId > 10) {
-            throw new UnknownAccountException("Номер счета неверный");
-        }
+        String p = "HomeTask7\\" + accountId + ".txt";
+
         System.out.println("Баланс Счета: " + accountId);
 
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("HomeTask7\\" + accountId + ".txt"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
@@ -30,30 +55,47 @@ public class AccountService {
 
     static void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
+        String p = "HomeTask7\\" + accountId + ".txt";
 
-        BufferedReader bufferedReader = new BufferedReader(new FileReader("HomeTask7\\" + accountId + ".txt"));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
         newAmount = Integer.parseInt(last) + amount;
 
-        /*FileWriter fw = new FileWriter("HomeTask7\\" + accountId + ".txt");
-        BufferedWriter bw = new BufferedWriter(fw);
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
+        writer.write("\n" + newAmount);
+        writer.close();
 
-        // Write in file
-        bw.write(String.valueOf(newAmount));
-
-        // Close connection
-        bw.close();*/
-        String p = "HomeTask7\\" + accountId + ".txt";
-        try (BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND)) {
-            writer.write("\n"+ newAmount);
-        }
     }
 
-
     static void transfer(int from, int to, int amount) throws
-            NotEnoughMoneyException, UnknownAccountException {
+            NotEnoughMoneyException, UnknownAccountException, IOException {
+        int newAmountTo = 0;
+        int newAmountFrom = 0;
 
+        String fromAccount = "HomeTask7\\" + from + ".txt";
+        String toAccount = "HomeTask7\\" + to + ".txt";
+
+        BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(fromAccount));
+        while ((current = bufferedReaderFrom.readLine()) != null) {
+            last = current;
+        }
+        newAmountFrom = Integer.parseInt(last) - amount;
+
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(fromAccount), StandardOpenOption.APPEND);
+        writer.write("\n" + newAmountFrom);
+        writer.close();
+
+
+        BufferedReader bufferedReaderTo = new BufferedReader(new FileReader(toAccount));
+        while ((current = bufferedReaderTo.readLine()) != null) {
+            last = current;
+        }
+        newAmountTo = Integer.parseInt(last) + amount;
+
+        BufferedWriter writerTo = Files.newBufferedWriter(Path.of(toAccount), StandardOpenOption.APPEND);
+        writerTo.write("\n" + newAmountTo);
+        writerTo.close();
     }
 }

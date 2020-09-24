@@ -1,20 +1,18 @@
 import java.io.*;
 
 public class Main {
-    public static void main(String[] args) throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
+    public static void main(String[] args) throws IOException, UnknownNameOperationException, UnknownAccountException, NotEnoughMoneyException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         int accountId, to, from, amount;
         int qtyAccounts = 10;
         Account j;
 
         try {
-            // Create new file
-            //String content = "100";
             for (int i = 1; i < (qtyAccounts + 1); i++) {
 
-                j = new Account(i, "Holder"+i);
+                j = new Account(i, "Holder" + i);
 
-                String path = "HomeTask7\\"+i + ".txt";
+                String path = "HomeTask7\\" + i + ".txt";
                 File file = new File(path);
                 // If file doesn't exists, then create it
                 if (!file.exists()) {
@@ -34,7 +32,6 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e);
         }
-
 
 
         String s = reader.readLine();
