@@ -8,7 +8,7 @@ public class AccountService {
     private static String last;
     private static int newAmount;
 
-   static void withdraw(int accountId, int amount) throws
+    static void withdraw(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
         String p = "HomeTask7\\" + accountId + ".txt";
@@ -17,15 +17,13 @@ public class AccountService {
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
-        System.out.println("Баланс счета до снятия наличных: " + last);
-        System.out.println("Сумма снятия: " + amount);
 
         try {
             newAmount = Integer.parseInt(last) - amount;
             if (newAmount < 0) {
                 throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
             }
-            System.out.print("Баланс счета после снятия наличных: " + newAmount);
+
             BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
             writer.write("\n" + newAmount);
             writer.close();
@@ -38,7 +36,7 @@ public class AccountService {
         }
     }
 
-    static void balance(int accountId) throws UnknownAccountException, IOException {
+    static int balance(int accountId) throws UnknownAccountException, IOException {
 
         String p = "HomeTask7\\" + accountId + ".txt";
 
@@ -46,7 +44,7 @@ public class AccountService {
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
-        System.out.println(last);//result
+        return Integer.parseInt(last);
     }
 
     static void deposit(int accountId, int amount) throws
@@ -58,14 +56,9 @@ public class AccountService {
             last = current;
         }
         newAmount = Integer.parseInt(last) + amount;
-        System.out.println("Баланс счета до внесения депозита: " + last);
-        System.out.println("Сумма депозита: " + amount);
-        System.out.println("Баланс счета после внесения депозита: " + newAmount);
-
         BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
         writer.write("\n" + newAmount);
         writer.close();
-
     }
 
     static void transfer(int from, int to, int amount) throws
@@ -100,12 +93,5 @@ public class AccountService {
         writerTo.write("\n" + newAmountTo);
         writerTo.close();
 
-        System.out.println("Баланс счета отправителя до перевода: " + lastFrom);
-        System.out.println("Сумма перевода: " + amount);
-        System.out.println("Баланс счета отправителя после перевода: " + newAmountFrom);
-
-        System.out.println("Баланс счета получателя до перевода: " + last);
-        System.out.println("Сумма перевода: " + amount);
-        System.out.println("Баланс счета получателя после перевода: " + newAmountTo);
     }
 }
