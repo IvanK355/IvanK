@@ -5,23 +5,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/25.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/BankFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/BankFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/data.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,13 +122,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00027" summary="исправил 5 задаение">
-      <created>1599457505954</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1599457505954</updated>
     </task>
     <task id="LOCAL-00028" summary="исправил 6 задаение">
       <created>1599458696771</created>
@@ -482,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601035519288</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="ДЗ 7 vfinal2">
+      <created>1601036858078</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1601036858078</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -504,7 +488,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5 DZ final2 - оказалось не так сложно )" />
     <MESSAGE value="5 DZ task 2 v1" />
     <MESSAGE value="5 DZ task 2 v2" />
     <MESSAGE value="Исправление ДЗ4 часть 1" />
@@ -529,7 +512,8 @@
     <MESSAGE value="ДЗ 7 v14" />
     <MESSAGE value="ДЗ 7 vfinal" />
     <MESSAGE value="ДЗ 7 vfinal1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7 vfinal1" />
+    <MESSAGE value="ДЗ 7 vfinal2" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7 vfinal2" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1600849753733">
@@ -580,22 +564,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601036393099">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601036773718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601036393099" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601036393099">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601036773718" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601036773718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601036393099" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601036393099">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601036773718" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601036773718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601036393099" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601036393099">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601036773718" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601036773718">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601036393099" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601036773718" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -608,10 +592,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601035525057">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601036865272">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601035525057" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601036865272" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
