@@ -11,10 +11,9 @@ public class AccountService {
     private static int newAmount;
     private static String pathData = "HomeTask7\\data.txt";
 
-    static void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
+    public void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
 
         ArrayList<Account> accountsWithdraw = new ArrayList<>();
-
         BufferedReader br = new BufferedReader(new FileReader(pathData));
         String s1;
         while ((s1 = br.readLine()) != null) {
@@ -59,7 +58,7 @@ public class AccountService {
 
     }
 
-    static void balance(int accountId) throws UnknownAccountException, IOException {
+    public void balance(int accountId) throws UnknownAccountException, IOException {
 
         ArrayList<Account> accountsBalance = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(pathData));
@@ -93,7 +92,7 @@ public class AccountService {
     }
 
 
-    static void deposit(int accountId, int amount) throws
+    public void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
         ArrayList<Account> accountsDeposit = new ArrayList<>();
         String path1 = "HomeTask7\\data.txt";
@@ -143,7 +142,7 @@ public class AccountService {
     }
 
 
-    static void transfer(int from, int to, int amount) throws
+    public void transfer(int from, int to, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
         ArrayList<Account> accountsTransfer = new ArrayList<>();
@@ -237,7 +236,7 @@ public class AccountService {
     }
 
 
-    public static void create(int parseInt, String s) throws IOException, UnknownAccountException {
+    public void create(int parseInt, String s) throws IOException, UnknownAccountException {
 
         ArrayList<Account> accountsCreate = new ArrayList<>();
         String pathCreate = "HomeTask7\\data.txt";
@@ -252,7 +251,8 @@ public class AccountService {
 
         for (Account account : accountsCreate) {
             if (account.getId() == parseInt) {
-                count++;break;
+                count++;
+                break;
             }
         }
 
@@ -273,11 +273,10 @@ public class AccountService {
         BufferedWriter bw = new BufferedWriter(fw);
         bw.write(String.valueOf(0));
         bw.close();
-
     }
 
     public void createNew() throws IOException {
-        for (int i = 2; i < 22; i += 2) {
+        for (int i = 1; i < 11; i++) {
 
             String path = "HomeTask7\\" + i + ".txt";
             File file = new File(path);
@@ -296,12 +295,12 @@ public class AccountService {
             file1.createNewFile();
             FileWriter fw = new FileWriter(pathData);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(String.valueOf(2));
-            bw.write("\n" + "Holder_2");
-            bw.write("\n" + "HomeTask7\\2.txt");
+            bw.write(String.valueOf(1));
+            bw.write("\n" + "Holder_1");
+            bw.write("\n" + "HomeTask7\\1.txt");
             bw.close();
 
-            for (int i = 4; i < 22; i += 2) {
+            for (int i = 2; i < 11; i++) {
                 BufferedWriter writer = Files.newBufferedWriter(Path.of(pathData), StandardOpenOption.APPEND);
                 writer.write("\n" + i);
                 writer.write("\n" + "Holder_" + i);

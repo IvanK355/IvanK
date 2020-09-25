@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class BankFacade {
 
-    private ArrayList<Account> accounts;
+    public ArrayList<Account> accounts;
     private AccountService accountService;
 
 
@@ -24,11 +24,11 @@ public class BankFacade {
         String[] array = s.split("\\W");
 
         switch (array[0]) {
-            case "balance" -> AccountService.balance(Integer.parseInt(array[1]));
-            case "withdraw" -> AccountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-            case "deposit" -> AccountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-            case "transfer" -> AccountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
-            case "create" -> AccountService.create(Integer.parseInt(array[1]), array[2]);
+            case "balance" -> accountService.balance(Integer.parseInt(array[1]));
+            case "withdraw" -> accountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
+            case "deposit" -> accountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
+            case "transfer" -> accountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
+            case "create" -> accountService.create(Integer.parseInt(array[1]), array[2]);
 
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
         }
