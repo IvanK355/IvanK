@@ -9,16 +9,16 @@ public class AccountService {
     private static String current;
     private static String last;
     private static int newAmount;
+    private static String pathData = "HomeTask7\\data.txt";
 
-   static void withdraw(int accountId, int amount) throws
-            NotEnoughMoneyException, UnknownAccountException, IOException {
+    static void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
 
         ArrayList<Account> accountsWithdraw = new ArrayList<>();
-        String path1 = "HomeTask7\\data.txt";
-        BufferedReader br = new BufferedReader(new FileReader(path1));
+
+        BufferedReader br = new BufferedReader(new FileReader(pathData));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            accountsWithdraw.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine() ));
+            accountsWithdraw.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
         }
 
         int count = 0;
@@ -34,9 +34,9 @@ public class AccountService {
             throw new UnknownAccountException("Счет неверный");
         }
 
-        String p = "HomeTask7\\" + accountsWithdraw.get(id).getId() + ".txt";
+        String parhWithdraw = "HomeTask7\\" + accountsWithdraw.get(id).getId() + ".txt";
 
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(parhWithdraw));
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
@@ -51,8 +51,7 @@ public class AccountService {
         System.out.println(last);
         System.out.println("Сняли: " + amount);
 
-
-        BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(parhWithdraw), StandardOpenOption.APPEND);
         writer.write("\n" + newAmount);
         writer.close();
         System.out.print("Баланс счета после снятия: ");
@@ -63,8 +62,7 @@ public class AccountService {
     static void balance(int accountId) throws UnknownAccountException, IOException {
 
         ArrayList<Account> accountsBalance = new ArrayList<>();
-        String path1 = "HomeTask7\\data.txt";
-        BufferedReader br = new BufferedReader(new FileReader(path1));
+        BufferedReader br = new BufferedReader(new FileReader(pathData));
         String s1;
         while ((s1 = br.readLine()) != null) {
             accountsBalance.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
@@ -236,6 +234,81 @@ public class AccountService {
         System.out.print("Баланс счета после пополнения: ");
         System.out.println(newAmountTo);
 
+    }
+
+
+    public static void create(int parseInt, String s) throws IOException, UnknownAccountException {
+
+        ArrayList<Account> accountsCreate = new ArrayList<>();
+        String pathCreate = "HomeTask7\\data.txt";
+
+        BufferedReader br = new BufferedReader(new FileReader(pathCreate));
+        String s1;
+        while ((s1 = br.readLine()) != null) {
+            accountsCreate.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
+        }
+
+        int count = 0;
+
+        for (Account account : accountsCreate) {
+            if (account.getId() == parseInt) {
+                count++;break;
+            }
+        }
+
+        if (count == 1) {
+            throw new UnknownAccountException("Такой счет уже сцществует");
+        }
+
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(pathCreate), StandardOpenOption.APPEND);
+        writer.write("\n" + parseInt);
+        writer.write("\n" + "Holder_" + s);
+        writer.write("\n" + "HomeTask7\\" + parseInt + ".txt");
+        writer.close();
+
+        String pathNewAccount = "HomeTask7\\" + parseInt + ".txt";
+        File file = new File(pathNewAccount);
+        file.createNewFile();
+        FileWriter fw = new FileWriter(pathNewAccount);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(String.valueOf(0));
+        bw.close();
+
+    }
+
+    public void createNew() throws IOException {
+        for (int i = 2; i < 22; i += 2) {
+
+            String path = "HomeTask7\\" + i + ".txt";
+            File file = new File(path);
+
+            if (!file.exists()) {
+                file.createNewFile();
+                FileWriter fw = new FileWriter("HomeTask7\\" + i + ".txt");
+                BufferedWriter bw = new BufferedWriter(fw);
+                bw.write(String.valueOf(0));
+                bw.close();
+            }
+        }
+
+        File file1 = new File(pathData);
+        if (!file1.exists()) {
+            file1.createNewFile();
+            FileWriter fw = new FileWriter(pathData);
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(String.valueOf(2));
+            bw.write("\n" + "Holder_2");
+            bw.write("\n" + "HomeTask7\\2.txt");
+            bw.close();
+
+            for (int i = 4; i < 22; i += 2) {
+                BufferedWriter writer = Files.newBufferedWriter(Path.of(pathData), StandardOpenOption.APPEND);
+                writer.write("\n" + i);
+                writer.write("\n" + "Holder_" + i);
+                writer.write("\n" + "HomeTask7\\" + i + ".txt");
+                writer.close();
+            }
+        }
     }
 }
 

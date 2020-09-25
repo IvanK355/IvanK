@@ -7,21 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/ComputerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/ComputerFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/12.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/16.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/18.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/6.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/8.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/BankFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/BankFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/data.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,13 +126,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00025" summary="Кодстайл, добавил фигурные скобки к if-else, исправил 4 задаение">
-      <created>1599454269128</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1599454269128</updated>
     </task>
     <task id="LOCAL-00026" summary="исправил 2 задаение">
       <created>1599457046498</created>
@@ -483,7 +463,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601025827783</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="ДЗ 7 v14">
+      <created>1601030700741</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1601030700741</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -505,8 +492,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Корректировка 3 задания v1" />
-    <MESSAGE value="5 DZ v1" />
     <MESSAGE value="5 DZ v1 добавлен Calcus" />
     <MESSAGE value="5 DZ final2 - оказалось не так сложно )" />
     <MESSAGE value="5 DZ task 2 v1" />
@@ -530,7 +515,9 @@
     <MESSAGE value="ДЗ 7 v10" />
     <MESSAGE value="ДЗ 7 v11" />
     <MESSAGE value="ДЗ 7 v12" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7 v12" />
+    <MESSAGE value="ДЗ 7 v14" />
+    <MESSAGE value="ДЗ 7 vfinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 7 vfinal" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="29" key="#Intentions" timestamp="1600849753733">
@@ -565,10 +552,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="466" y="239" width="433" height="269" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1600671596131" />
-    <state x="413" y="110" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1599045379204">
+    <state x="413" y="110" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1601031387528">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="110" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1599045379204" />
+    <state x="413" y="110" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1366.728@0.0.1366.728" timestamp="1601031387528" />
     <state x="429" y="215" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599232328469">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -581,22 +568,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601030089166">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601034167329">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601030089166">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601034167329" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601034167328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601030089166">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601034167328" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601034167328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601030089166">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601034167328" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601034167328">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601034167328" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -609,10 +596,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601025829427">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601030707779">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601025829427" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601030707779" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
