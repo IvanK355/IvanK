@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/SchoolTest/SchoolTest.iml" filepath="$PROJECT_DIR$/SchoolTest/SchoolTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/HomeTask3/Test1.iml" filepath="$PROJECT_DIR$/HomeTask3/Test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/HomeTask3/Test2.iml" filepath="$PROJECT_DIR$/HomeTask3/Test2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HomeTask7/TestFacade/TestFacade.iml" filepath="$PROJECT_DIR$/HomeTask7/TestFacade/TestFacade.iml" />
     </modules>
   </component>
 </project>

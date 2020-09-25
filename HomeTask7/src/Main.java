@@ -12,7 +12,7 @@ public class Main {
 
         ArrayList<Account> accounts = new ArrayList<>();
 
-        for (int i = 1; i < 11; i++) {
+        for (int i = 2; i < 22; i+=2) {
 
             String path = "HomeTask7\\" + i + ".txt";
             File file = new File(path);
@@ -35,11 +35,11 @@ public class Main {
             file1.createNewFile();
             FileWriter fw = new FileWriter(path1);
             BufferedWriter bw = new BufferedWriter(fw);
-            bw.write(String.valueOf(1));
-            bw.write("\n" + "Holder_1");
+            bw.write(String.valueOf(2));
+            bw.write("\n" + "Holder_2");
             bw.close();
 
-            for (int i = 2; i < 22; i+=2) {
+            for (int i = 4; i < 22; i+=2) {
                 BufferedWriter writer = Files.newBufferedWriter(Path.of(path1), StandardOpenOption.APPEND);
                 writer.write("\n" + i);
                 writer.write("\n" + "Holder_" + i);
@@ -73,6 +73,7 @@ public class Main {
                         System.out.print("Баланс счета: ");
                         System.out.println(accounts.get(i).getAmount());
                     }
+                    else {throw new UnknownAccountException("Счет неверный");}
                 }
             }
             case ("withdraw") -> {

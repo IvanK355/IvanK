@@ -2,11 +2,13 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 
 public class AccountService {
     private static String current;
     private static String last;
     private static int newAmount;
+
 
     static void withdraw(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
@@ -37,7 +39,6 @@ public class AccountService {
     }
 
     static int balance(int accountId) throws UnknownAccountException, IOException {
-
         String p = "HomeTask7\\" + accountId + ".txt";
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(p));

@@ -1,5 +1,3 @@
-import java.io.IOException;
-
 public class Account {
 
     private int id;
@@ -27,8 +25,8 @@ public class Account {
         this.holder = holder;
     }
 
-    public int getAmount() throws IOException, UnknownAccountException {
-        amount = AccountService.balance(this.id);
+    public int getAmount() {
+        amount = AccountService.balance(int accountId);
         return amount;
     }
 
