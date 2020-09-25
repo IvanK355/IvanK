@@ -16,11 +16,9 @@ public class BankFacade {
         this.accountService = new AccountService();
     }
 
-    public void info() throws IOException {
+    public void info() throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
 
-        ArrayList<Account> accounts = new ArrayList<>();
-
-        for (int i = 2; i < 22; i+=2) {
+        for (int i = 2; i < 22; i += 2) {
 
             String path = "HomeTask7\\" + i + ".txt";
             File file = new File(path);
@@ -47,7 +45,7 @@ public class BankFacade {
             bw.write("\n" + "Holder_2");
             bw.close();
 
-            for (int i = 4; i < 22; i+=2) {
+            for (int i = 4; i < 22; i += 2) {
                 BufferedWriter writer = Files.newBufferedWriter(Path.of(path1), StandardOpenOption.APPEND);
                 writer.write("\n" + i);
                 writer.write("\n" + "Holder_" + i);
@@ -55,15 +53,49 @@ public class BankFacade {
             }
         }
 
-        BufferedReader br = new BufferedReader(new FileReader(path1));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        //for (int i = 1; i < (qtyAccounts + 1); i++) {
-        String s1;
-        while ((s1 = br.readLine()) != null) {
-            accounts.add(new Account(Integer.parseInt(s1), br.readLine()));
+        String s = reader.readLine();
+
+        String[] array = s.split("\\W");
+
+
+        switch (array[0]) {
+            case ("balance") -> {
+                AccountService.balance(Integer.parseInt(array[1]));
+                break;
+            }
+            case ("withdraw") -> {
+                AccountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
+                break;
+            }
+            case ("deposit") -> {
+                {
+                    AccountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
+                    break;
+                }
+            }
+            case ("transfer") -> {
+                AccountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
+                break;
+            }
+
+            default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
+
+
         }
-
-        account.getInfo();
-        accountService.getInfo();
     }
 }
+
+//BufferedReader br = new BufferedReader(new FileReader(path1));
+
+//for (int i = 1; i < (qtyAccounts + 1); i++) {
+//String s1;
+//while ((s1 = br.readLine()) != null) {
+//  accounts.add(new Account(Integer.parseInt(s1), br.readLine()));
+
+
+// account.getInfo();
+// accountService.getInfo();
+
+
