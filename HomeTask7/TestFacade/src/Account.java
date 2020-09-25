@@ -1,10 +1,7 @@
-import java.io.IOException;
-
 public class Account {
 
     private int id;
     private String holder;
-    private int amount;
 
     public Account(int i, String s) {
         this.id = i;
@@ -29,11 +26,6 @@ public class Account {
 
     public void setHolder(String holder) {
         this.holder = holder;
-    }
-
-    public int getAmount()  {
-
-        return amount;
     }
 
 }

@@ -10,11 +10,7 @@ public class AccountService {
     private static String last;
     private static int newAmount;
 
-    public AccountService() throws FileNotFoundException {
-    }
-
-
-    static void withdraw(int accountId, int amount) throws
+   static void withdraw(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
         ArrayList<Account> accountsWithdraw = new ArrayList<>();
@@ -159,8 +155,8 @@ public class AccountService {
         while ((s1 = br.readLine()) != null) {
             accountsTransfer.add(new Account(Integer.parseInt(s1), br.readLine()));
         }
-        int newAmountTo = 0;
-        int newAmountFrom = 0;
+        int newAmountTo;
+        int newAmountFrom;
         String currentFrom;
         String lastFrom = null;
         String currentTo;

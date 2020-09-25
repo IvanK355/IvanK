@@ -1,19 +1,14 @@
-import javax.security.auth.login.AccountException;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
-import java.util.ArrayList;
 
 public class BankFacade {
 
-    private Account account;
-    private AccountService accountService;
 
-
-    public BankFacade() throws FileNotFoundException {
-        this.account = new Account();
-        this.accountService = new AccountService();
+    public BankFacade() {
+        Account account = new Account();
+        AccountService accountService = new AccountService();
     }
 
     public void info() throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
@@ -61,24 +56,14 @@ public class BankFacade {
 
 
         switch (array[0]) {
-            case ("balance") -> {
-                AccountService.balance(Integer.parseInt(array[1]));
-                break;
-            }
-            case ("withdraw") -> {
-                AccountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-                break;
-            }
+            case ("balance") -> AccountService.balance(Integer.parseInt(array[1]));
+            case ("withdraw") -> AccountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
             case ("deposit") -> {
                 {
                     AccountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-                    break;
                 }
             }
-            case ("transfer") -> {
-                AccountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
-                break;
-            }
+            case ("transfer") -> AccountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
 
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
 
