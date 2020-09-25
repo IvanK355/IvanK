@@ -11,7 +11,7 @@ public class BankFacade {
     private AccountService accountService;
 
 
-    public BankFacade() {
+    public BankFacade() throws FileNotFoundException {
         this.account = new Account();
         this.accountService = new AccountService();
     }

@@ -161,10 +161,10 @@ public class AccountService {
         }
         int newAmountTo = 0;
         int newAmountFrom = 0;
-        String fromAccount = "HomeTask7\\" + from + ".txt";
-        String toAccount = "HomeTask7\\" + to + ".txt";
         String currentFrom;
         String lastFrom = null;
+        String currentTo;
+        String lastTo = null;
 
         int countFrom = 0;
         int idFrom = 0;
@@ -191,32 +191,54 @@ public class AccountService {
         }
 
 
-        BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(fromAccount));
+        String pathFrom = "HomeTask7\\" + accountsTransfer.get(idFrom).getId() + ".txt";
 
+        BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(pathFrom));
         while ((currentFrom = bufferedReaderFrom.readLine()) != null) {
             lastFrom = currentFrom;
         }
 
         newAmountFrom = Integer.parseInt(lastFrom) - amount;
-        if (newAmount < 0) {
-            throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
+        if (newAmountFrom < 0) {
+            throw new NotEnoughMoneyException("Недостаточно стредств на счете: " + accountsTransfer.get(idFrom).getId());
         }
+        System.out.println("Счет: " + accountsTransfer.get(idFrom).getId());
+        System.out.println("Владелец счета: " + accountsTransfer.get(idFrom).getHolder());
+        System.out.print("Баланс счета до перевода: ");
+        System.out.println(lastFrom);
+        System.out.println("Перевели: " + amount);
 
-        BufferedWriter writer = Files.newBufferedWriter(Path.of(fromAccount), StandardOpenOption.APPEND);
+
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(pathFrom), StandardOpenOption.APPEND);
         writer.write("\n" + newAmountFrom);
         writer.close();
+        System.out.print("Баланс счета после перевода: ");
+        System.out.println(newAmountFrom);
 
+        String pathTo = "HomeTask7\\" + accountsTransfer.get(idTo).getId() + ".txt";
 
-        BufferedReader bufferedReaderTo = new BufferedReader(new FileReader(toAccount));
-        while ((current = bufferedReaderTo.readLine()) != null) {
-            last = current;
+        BufferedReader bufferedReaderTo = new BufferedReader(new FileReader(pathTo));
+
+        while ((currentTo = bufferedReaderTo.readLine()) != null) {
+            lastTo = currentTo;
         }
 
-        newAmountTo = Integer.parseInt(last) + amount;
+        newAmountTo = Integer.parseInt(lastTo) + amount;
+        if (newAmountTo < 0) {
+            throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
+        }
+        System.out.println("Счет: " + accountsTransfer.get(idTo).getId());
+        System.out.println("Владелец счета: " + accountsTransfer.get(idTo).getHolder());
+        System.out.print("Баланс счета до пополнения: ");
+        System.out.println(lastTo);
+        System.out.println("Перевели: " + amount);
 
-        BufferedWriter writerTo = Files.newBufferedWriter(Path.of(toAccount), StandardOpenOption.APPEND);
+
+        BufferedWriter writerTo = Files.newBufferedWriter(Path.of(pathTo), StandardOpenOption.APPEND);
         writerTo.write("\n" + newAmountTo);
         writerTo.close();
+        System.out.print("Баланс счета после пополнения: ");
+        System.out.println(newAmountTo);
 
     }
 }
