@@ -8,10 +8,6 @@ public class Account {
         this.holder = s;
     }
 
-    public Account() {
-
-    }
-
     public int getId() {
         return id;
     }

@@ -5,12 +5,6 @@ import java.nio.file.StandardOpenOption;
 
 public class BankFacade {
 
-
-    public BankFacade() {
-        Account account = new Account();
-        AccountService accountService = new AccountService();
-    }
-
     public void info() throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
 
         for (int i = 2; i < 22; i += 2) {
@@ -54,20 +48,12 @@ public class BankFacade {
 
         String[] array = s.split("\\W");
 
-
         switch (array[0]) {
-            case ("balance") -> AccountService.balance(Integer.parseInt(array[1]));
-            case ("withdraw") -> AccountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-            case ("deposit") -> {
-                {
-                    AccountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-                }
-            }
-            case ("transfer") -> AccountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
-
+            case "balance" -> AccountService.balance(Integer.parseInt(array[1]));
+            case "withdraw" -> AccountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
+            case "deposit" -> AccountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
+            case "transfer" -> AccountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
-
-
         }
     }
 }
