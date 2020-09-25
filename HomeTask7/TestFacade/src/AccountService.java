@@ -18,7 +18,7 @@ public class AccountService {
         BufferedReader br = new BufferedReader(new FileReader(path1));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            accountsWithdraw.add(new Account(Integer.parseInt(s1), br.readLine()));
+            accountsWithdraw.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine() ));
         }
 
         int count = 0;
@@ -67,7 +67,7 @@ public class AccountService {
         BufferedReader br = new BufferedReader(new FileReader(path1));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            accountsBalance.add(new Account(Integer.parseInt(s1), br.readLine()));
+            accountsBalance.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
         }
         int count = 0;
         int id = 0;
@@ -82,7 +82,7 @@ public class AccountService {
             throw new UnknownAccountException("Счет неверный");
         }
 
-        String p = "HomeTask7\\" + accountsBalance.get(id).getId() + ".txt";
+        String p = accountsBalance.get(id).getAmount();
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
         while ((current = bufferedReader.readLine()) != null) {
@@ -102,7 +102,7 @@ public class AccountService {
         BufferedReader br = new BufferedReader(new FileReader(path1));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            accountsDeposit.add(new Account(Integer.parseInt(s1), br.readLine()));
+            accountsDeposit.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
         }
 
         int count = 0;
@@ -118,7 +118,7 @@ public class AccountService {
             throw new UnknownAccountException("Счет неверный");
         }
 
-        String p = "HomeTask7\\" + accountsDeposit.get(id).getId() + ".txt";
+        String p = accountsDeposit.get(id).getAmount();
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
         while ((current = bufferedReader.readLine()) != null) {
@@ -153,7 +153,7 @@ public class AccountService {
         BufferedReader br = new BufferedReader(new FileReader(path1));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            accountsTransfer.add(new Account(Integer.parseInt(s1), br.readLine()));
+            accountsTransfer.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
         }
         int newAmountTo;
         int newAmountFrom;
@@ -187,7 +187,7 @@ public class AccountService {
         }
 
 
-        String pathFrom = "HomeTask7\\" + accountsTransfer.get(idFrom).getId() + ".txt";
+        String pathFrom = accountsTransfer.get(idFrom).getAmount();
 
         BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(pathFrom));
         while ((currentFrom = bufferedReaderFrom.readLine()) != null) {
@@ -211,7 +211,7 @@ public class AccountService {
         System.out.print("Баланс счета после перевода: ");
         System.out.println(newAmountFrom);
 
-        String pathTo = "HomeTask7\\" + accountsTransfer.get(idTo).getId() + ".txt";
+        String pathTo = accountsTransfer.get(idTo).getAmount();
 
         BufferedReader bufferedReaderTo = new BufferedReader(new FileReader(pathTo));
 

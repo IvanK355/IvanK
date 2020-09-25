@@ -2,8 +2,19 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
+import java.util.ArrayList;
 
 public class BankFacade {
+
+    private ArrayList<Account> accounts;
+    private AccountService accountService;
+
+
+    public BankFacade() {
+        this.accounts = new ArrayList<Account>();
+        this.accountService = new AccountService();
+
+    }
 
     public void info() throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
 
@@ -32,12 +43,14 @@ public class BankFacade {
             BufferedWriter bw = new BufferedWriter(fw);
             bw.write(String.valueOf(2));
             bw.write("\n" + "Holder_2");
+            bw.write("\n" + "HomeTask7\\2.txt");
             bw.close();
 
             for (int i = 4; i < 22; i += 2) {
                 BufferedWriter writer = Files.newBufferedWriter(Path.of(path1), StandardOpenOption.APPEND);
                 writer.write("\n" + i);
                 writer.write("\n" + "Holder_" + i);
+                writer.write("\n"+"HomeTask7\\" + i + ".txt");
                 writer.close();
             }
         }

@@ -2,10 +2,12 @@ public class Account {
 
     private int id;
     private String holder;
+    private String amount;
 
-    public Account(int i, String s) {
-        this.id = i;
-        this.holder = s;
+    public Account(int id, String holder, String amount) {
+        this.id = id;
+        this.holder = holder;
+        this.amount = amount;
     }
 
     public int getId() {
@@ -24,4 +26,11 @@ public class Account {
         this.holder = holder;
     }
 
+    public String getAmount() {
+        return amount;
+    }
+
+    public void setAmount(String amount) {
+        this.amount = amount;
+    }
 }

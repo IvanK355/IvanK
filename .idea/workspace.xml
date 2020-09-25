@@ -6,7 +6,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask5/src/Task2/ComputerFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask5/src/Task2/ComputerFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/12.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/BankFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/BankFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/data.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -534,10 +549,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599639317415" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1601019371112">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1601029958821">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1601019371112" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1601029958821" />
     <state x="412" y="163" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600671483784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -566,22 +581,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1599216951805" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601025335700">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601030089166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601025335700" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601025335700">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601030089166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601025335700" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601025335699">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601030089166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601025335699" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601025335700">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601030089166">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601025335700" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601030089166" />
     <state x="321" y="132" key="MultipleFileMergeDialog" timestamp="1599223424501">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
