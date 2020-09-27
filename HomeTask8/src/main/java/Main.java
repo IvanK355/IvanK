@@ -1,22 +1,30 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Main {
 
+    private static final String SQL = "INSERT INTO STUDENTS (id, name, surname, age) VALUES (random_uuid(), 'Viktor', 'Medvedev', 18)";
 
     public static void main(String[] args) {
-        try {
-            Class.forName("org.h2.Driver");
-            try {
-                Connection connection = DriverManager.getConnection("jdbc:h2:mem:test");
-            } catch (SQLException throwables) {
-                throwables.printStackTrace();
-            }
 
-        } catch (ClassNotFoundException ex) {
-            ex.printStackTrace();
+        Connection connection = null;
+        Statement statement = null;
+        try {
+            try {
+                connection =
+                        DriverManager.getConnection("jdbc:h2:mem:test;INIT=RUNSCRIPT FROM './HomeTask8/schema.sql'\\;RUNSCRIPT FROM './HomeTask8/data.sql'");
+                statement = connection.createStatement();
+                System.out.println(statement.execute(SQL));
+            } finally {
+                statement.close();
+                connection.close();
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
         }
+
     }
 }
 

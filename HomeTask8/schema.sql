@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS STUDENTS;
+CREATE TABLE IF NOT EXISTS STUDENTS (
+  id VARCHAR(50) NOT NULL,
+    name VARCHAR(50) NOT NULL,
+       surname VARCHAR(20) NOT NULL,
+         age INT
+         );
+
+
