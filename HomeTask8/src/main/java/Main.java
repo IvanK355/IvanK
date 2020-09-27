@@ -6,6 +6,7 @@ import java.sql.Statement;
 public class Main {
 
     private static final String SQL = "INSERT INTO STUDENTS (id, name, surname, age) VALUES (random_uuid(), 'Viktor', 'Medvedev', 18)";
+    private static final String SQL2 = "SELECT * FROM STUDENTS";
 
     public static void main(String[] args) {
 
@@ -16,7 +17,7 @@ public class Main {
                 connection =
                         DriverManager.getConnection("jdbc:h2:mem:test;INIT=RUNSCRIPT FROM './HomeTask8/schema.sql'\\;RUNSCRIPT FROM './HomeTask8/data.sql'");
                 statement = connection.createStatement();
-                System.out.println(statement.execute(SQL));
+                System.out.println(statement.execute(SQL2));
             } finally {
                 statement.close();
                 connection.close();

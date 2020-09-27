@@ -11,14 +11,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change afterPath="$PROJECT_DIR$/HomeTask8/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask8/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/HomeTask8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/HomeTask8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/src/main/java/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,13 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Форматирование">
-      <created>1599648509205</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1599648509205</updated>
     </task>
     <task id="LOCAL-00035" summary="Корректировка 1 задания">
       <created>1600671251127</created>
@@ -517,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601193777442</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="HomeTask8 v2 Insert statement">
+      <created>1601210112371</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1601210112371</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +532,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Исправление ДЗ4 часть 2" />
     <MESSAGE value="Исправление ДЗ4 часть 2 v1" />
     <MESSAGE value="Исправление ДЗ 6 часть 1" />
     <MESSAGE value="ДЗ 6 часть 1" />
@@ -564,7 +556,8 @@
     <MESSAGE value="ДЗ 8" />
     <MESSAGE value="HomeTask7 final version" />
     <MESSAGE value="HomeTask8 v1 Interface create JBDC and Connection" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomeTask8 v1 Interface create JBDC and Connection" />
+    <MESSAGE value="HomeTask8 v2 Insert statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeTask8 v2 Insert statement" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -639,22 +632,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601208811887">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601210045028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601208811887" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601208811887">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601210045028" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601210045028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601208811887" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601208811887">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601210045028" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601210045027">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601208811887" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601208811887">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601210045027" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601210045028">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601208811887" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601210045028" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
