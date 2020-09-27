@@ -13,7 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask8/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +87,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="ArrayListSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task1.ArrayListSample" />
       <module name="HomeTask6" />
@@ -150,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ArrayListSample" />
         <item itemvalue="Application.Main" />
@@ -169,13 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00032" summary="ДЗ4 Тест 1 сделано 1">
-      <created>1599641589060</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1599641589060</updated>
     </task>
     <task id="LOCAL-00033" summary="ДЗ4 Тест 2 Сделан">
       <created>1599648267039</created>
@@ -513,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601126437045</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="HomeTask7 final version">
+      <created>1601192320830</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1601192320830</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -535,7 +535,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="5 DZ task 2 v2" />
     <MESSAGE value="Исправление ДЗ4 часть 1" />
     <MESSAGE value="Исправление ДЗ4 часть 2" />
     <MESSAGE value="Исправление ДЗ4 часть 2 v1" />
@@ -560,7 +559,8 @@
     <MESSAGE value="ДЗ 7 vfinal2" />
     <MESSAGE value="ДЗ 8 v1" />
     <MESSAGE value="ДЗ 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 8" />
+    <MESSAGE value="HomeTask7 final version" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeTask7 final version" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -635,22 +635,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601147272657">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601193114504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601147272657" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601147272657">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601193114504" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601193114504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601147272657" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601147272656">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601193114504" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601193114504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601147272656" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601147272657">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601193114504" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601193114504">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601147272657" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601193114504" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -667,10 +667,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601140665461">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601192330297">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601140665461" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601192330297" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
