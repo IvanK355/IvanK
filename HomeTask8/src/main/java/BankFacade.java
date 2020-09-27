@@ -1,28 +1,19 @@
 import java.io.*;
 import java.sql.*;
 import java.util.ArrayList;
+import java.sql.*;
 
 public class BankFacade {
 
     private ArrayList<Account> accounts;
     private AccountService accountService;
 
-
     public BankFacade() {
         this.accounts = new ArrayList<>();
         this.accountService = new AccountService();
-
     }
 
     public void info() throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
-
-import java.sql.*;
-
-        public class Main {
-
-            private static final String SELECT = "SELECT * FROM STUDENTS";
-
-
 
                 try (
                         Connection connection = DriverManager
@@ -34,8 +25,6 @@ import java.sql.*;
                         System.out.println(resultSet.getString(2));
                     }
                 }
-
-
 
         accountService.createNew();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -53,5 +42,4 @@ import java.sql.*;
 
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
         }
-    }
 }
