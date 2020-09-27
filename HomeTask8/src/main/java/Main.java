@@ -1,7 +1,4 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Main {
 
@@ -17,7 +14,15 @@ public class Main {
                 connection =
                         DriverManager.getConnection("jdbc:h2:mem:test;INIT=RUNSCRIPT FROM './HomeTask8/schema.sql'\\;RUNSCRIPT FROM './HomeTask8/data.sql'");
                 statement = connection.createStatement();
-                System.out.println(statement.execute(SQL2));
+
+                //System.out.println(statement.execute(SQL2));
+
+                ResultSet resultSet = statement.executeQuery(SQL2);
+
+                while (resultSet.next()){
+                    System.out.println(resultSet.getString(2));
+                }
+
             } finally {
                 statement.close();
                 connection.close();
