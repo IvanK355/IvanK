@@ -11,14 +11,19 @@ public class AccountService {
     private static int newAmount;
     private static String pathData = "HomeTask7\\data.txt";
 
-    public void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
-
-        ArrayList<Account> accountsWithdraw = new ArrayList<>();
+    private ArrayList<Account> readAccountData() throws IOException {
+        ArrayList<Account> accounts = new ArrayList<>();
         BufferedReader br = new BufferedReader(new FileReader(pathData));
         String s1;
         while ((s1 = br.readLine()) != null) {
-            accountsWithdraw.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
+            accounts.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
         }
+        return accounts;
+    }
+
+    public void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
+
+        ArrayList<Account> accountsWithdraw = readAccountData();
 
         int count = 0;
         int id = 0;
@@ -60,12 +65,8 @@ public class AccountService {
 
     public void balance(int accountId) throws UnknownAccountException, IOException {
 
-        ArrayList<Account> accountsBalance = new ArrayList<>();
-        BufferedReader br = new BufferedReader(new FileReader(pathData));
-        String s1;
-        while ((s1 = br.readLine()) != null) {
-            accountsBalance.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
-        }
+        ArrayList<Account> accountsBalance = readAccountData();
+
         int count = 0;
         int id = 0;
         for (int i = 0; i < accountsBalance.size(); i++) {
@@ -94,13 +95,7 @@ public class AccountService {
 
     public void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
-        ArrayList<Account> accountsDeposit = new ArrayList<>();
-        String path1 = "HomeTask7\\data.txt";
-        BufferedReader br = new BufferedReader(new FileReader(path1));
-        String s1;
-        while ((s1 = br.readLine()) != null) {
-            accountsDeposit.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
-        }
+        ArrayList<Account> accountsDeposit = readAccountData();
 
         int count = 0;
         int id = 0;
@@ -145,13 +140,8 @@ public class AccountService {
     public void transfer(int from, int to, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
-        ArrayList<Account> accountsTransfer = new ArrayList<>();
-        String path1 = "HomeTask7\\data.txt";
-        BufferedReader br = new BufferedReader(new FileReader(path1));
-        String s1;
-        while ((s1 = br.readLine()) != null) {
-            accountsTransfer.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
-        }
+        ArrayList<Account> accountsTransfer = readAccountData();
+
         int newAmountTo;
         int newAmountFrom;
         String currentFrom;
@@ -238,14 +228,8 @@ public class AccountService {
 
     public void create(int parseInt, String s) throws IOException, UnknownAccountException {
 
-        ArrayList<Account> accountsCreate = new ArrayList<>();
+        ArrayList<Account> accountsCreate = readAccountData();
         String pathCreate = "HomeTask7\\data.txt";
-
-        BufferedReader br = new BufferedReader(new FileReader(pathCreate));
-        String s1;
-        while ((s1 = br.readLine()) != null) {
-            accountsCreate.add(new Account(Integer.parseInt(s1), br.readLine(), br.readLine()));
-        }
 
         int count = 0;
 

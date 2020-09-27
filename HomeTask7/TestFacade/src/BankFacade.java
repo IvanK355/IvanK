@@ -3,7 +3,7 @@ import java.util.ArrayList;
 
 public class BankFacade {
 
-    public ArrayList<Account> accounts;
+    private ArrayList<Account> accounts;
     private AccountService accountService;
 
 

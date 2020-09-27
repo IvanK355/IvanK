@@ -12,20 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomeTask8/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/HomeTask8.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/HomeTask8.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/AccountService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/NotEnoughMoneyException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/UnknownAccountException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask7/TestFacade/src/AccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="14" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/HomeTask3/src/Test2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TestBd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -99,7 +87,7 @@
       <command value="mvn test" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="ArrayListSample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Task1.ArrayListSample" />
       <module name="HomeTask6" />
@@ -162,8 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.ArrayListSample" />
         <item itemvalue="Application.Main" />
@@ -181,27 +169,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Исправление camelCase _ исключение транслитерации">
-      <created>1599629744431</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1599629744434</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Исправление camelCase _ исключение транслитерации1">
-      <created>1599630161679</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1599630161679</updated>
-    </task>
-    <task id="LOCAL-00031" summary="ДЗ4 Тест 1 сделано">
-      <created>1599641273001</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1599641273001</updated>
     </task>
     <task id="LOCAL-00032" summary="ДЗ4 Тест 1 сделано 1">
       <created>1599641589060</created>
@@ -525,7 +492,28 @@
       <option name="project" value="LOCAL" />
       <updated>1601038878580</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="ДЗ 8">
+      <created>1601126400743</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1601126400744</updated>
+    </task>
+    <task id="LOCAL-00079" summary="ДЗ 8">
+      <created>1601126429173</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1601126429173</updated>
+    </task>
+    <task id="LOCAL-00080" summary="ДЗ 8">
+      <created>1601126437045</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1601126437045</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,7 +542,6 @@
     <MESSAGE value="Исправление ДЗ 6 часть 1" />
     <MESSAGE value="ДЗ 6 часть 1" />
     <MESSAGE value="ДЗ 7" />
-    <MESSAGE value="ДЗ 8" />
     <MESSAGE value="ДЗ 7 v1" />
     <MESSAGE value="ДЗ 7 v2" />
     <MESSAGE value="ДЗ 7 v3" />
@@ -572,7 +559,8 @@
     <MESSAGE value="ДЗ 7 vfinal1" />
     <MESSAGE value="ДЗ 7 vfinal2" />
     <MESSAGE value="ДЗ 8 v1" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 8 v1" />
+    <MESSAGE value="ДЗ 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -627,6 +615,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="429" y="215" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1599232328469" />
+    <state x="337" y="0" key="CommitChangelistDialog2" timestamp="1601141008826">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="337" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1601141008826" />
     <state x="110" y="127" width="1146" height="488" key="DiffContextDialog" timestamp="1599233221201">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -635,30 +627,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="550" y="114" key="EnvironmentVariablesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601099270742" />
-    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1601124726489">
+    <state x="462" y="105" key="FileChooserDialogImpl" timestamp="1601140720401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601124726489" />
+    <state x="462" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1601140720401" />
     <state x="507" y="283" key="Github.CreateGistDialog" timestamp="1601048923909">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601125920339">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom" timestamp="1601147272657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601125920339" />
-    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601125920339">
+    <state width="1323" height="220" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601147272657" />
+    <state width="1323" height="220" key="GridCell.Tab.0.center" timestamp="1601147272657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601125920339" />
-    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601125920339">
+    <state width="1323" height="220" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601147272657" />
+    <state width="1323" height="220" key="GridCell.Tab.0.left" timestamp="1601147272656">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601125920339" />
-    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601125920339">
+    <state width="1323" height="220" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601147272656" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right" timestamp="1601147272657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601125920339" />
+    <state width="1323" height="220" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601147272657" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -675,10 +667,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601038879087">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601140665461">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601038879087" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601140665461" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -695,6 +687,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="0" y="0" width="587" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1600937491717" />
+    <state x="483" y="265" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1601140653078">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="483" y="265" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1366.728@0.0.1366.728" timestamp="1601140653078" />
     <state x="265" y="0" width="1101" height="679" key="new project wizard" timestamp="1601125701371">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -711,5 +707,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1600774378544" />
+    <state x="513" y="154" key="svn.repositoryBrowser" timestamp="1601141240434">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="513" y="154" key="svn.repositoryBrowser/0.0.1366.728@0.0.1366.728" timestamp="1601141240434" />
   </component>
 </project>
