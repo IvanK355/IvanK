@@ -14,7 +14,7 @@ public class BankFacade {
         this.accountService = new AccountService();
     }
 
-    public void info() throws IOException, UnknownNameOperationException, UnknownAccountException, NotEnoughMoneyException {
+    public void info() throws IOException, UnknownNameOperationException, UnknownAccountException, NotEnoughMoneyException, SQLException {
 
 
         accountService.createNew();
@@ -26,9 +26,9 @@ public class BankFacade {
 
         switch (array[0]) {
             case "balance" -> accountService.balance(array[1]);
-            case "withdraw" -> accountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-            case "deposit" -> accountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
-            case "transfer" -> accountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
+            case "withdraw" -> accountService.withdraw(array[1], array[2]);
+            case "deposit" -> accountService.deposit(array[1], array[2]);
+            case "transfer" -> accountService.transfer(array[1], array[2], array[3]);
             case "create" -> accountService.create(Integer.parseInt(array[1]), array[2]);
 
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
