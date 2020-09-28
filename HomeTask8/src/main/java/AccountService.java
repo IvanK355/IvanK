@@ -3,24 +3,24 @@ import java.sql.*;
 
 public class AccountService {
 
-    void withdraw(String accountId, String amount2) throws SQLException {
+    void withdraw(String accountId, String amount2) throws SQLException, UnknownAccountException {
         sqlSelect(accountId);
         updateWithdraw(accountId, amount2);
         sqlSelect(accountId);
 
     }
 
-    void balance(String accountId) throws SQLException {
+    void balance(String accountId) throws SQLException, UnknownAccountException {
         sqlSelect(accountId);
     }
 
-    void deposit(String accountId, String amount2) throws SQLException {
+    void deposit(String accountId, String amount2) throws SQLException, UnknownAccountException {
         sqlSelect(accountId);
         updateDeposit(accountId, amount2);
         sqlSelect(accountId);
     }
 
-    public void transfer(String from, String to, String amount) throws SQLException {
+    public void transfer(String from, String to, String amount) throws SQLException, UnknownAccountException {
 
         balance(from);
         balance(to);
@@ -45,38 +45,24 @@ public class AccountService {
         }
     }
 
-    void sqlSelect(String accountId) throws SQLException {
-
+    void sqlSelect(String accountId) throws SQLException, UnknownAccountException {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
             try {
+
                 connection = DriverManager
                         .getConnection("jdbc:h2:mem:ACCOUNT");
-
-                preparedStatement = connection.prepareStatement("SELECT * FROM account");
-                ResultSet resultSet = preparedStatement.executeQuery();
-                int count = 0;
-
-                while (resultSet.next()) {
-
-                    if (resultSet.getInt(1) == Integer.parseInt(accountId)) {
-                        count++;
-                    }
-                }
-
-                if (count == 0) {
-                    throw new UnknownAccountException("Счет неверный");
-                }
-                preparedStatement = null;
-
                 preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
                 preparedStatement.setInt(1, Integer.parseInt(accountId));
-                resultSet = preparedStatement.executeQuery();
+                ResultSet resultSet = preparedStatement.executeQuery();
                 int id;
                 String name;
                 int amount;
-
+                if (!resultSet.next()) {
+                    throw new UnknownAccountException("Счет неверный");
+                }
+                resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
                     id = resultSet.getInt(1);
                     name = resultSet.getString(2);
@@ -84,17 +70,18 @@ public class AccountService {
                     System.out.println(id + " " + name + " " + amount);
                 }
 
-            } catch (SQLException | UnknownAccountException throwables) {
+
+            } catch (SQLException throwables) {
                 throwables.printStackTrace();
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
             }
-
-
         } finally {
             preparedStatement.close();
             connection.close();
         }
-
     }
+
 
     void updateWithdraw(String accountId, String amount2) throws SQLException {
 
