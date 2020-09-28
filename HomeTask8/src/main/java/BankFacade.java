@@ -8,23 +8,14 @@ public class BankFacade {
     private ArrayList<Account> accounts;
     private AccountService accountService;
 
+
     public BankFacade() {
         this.accounts = new ArrayList<>();
         this.accountService = new AccountService();
     }
 
-    public void info() throws IOException, UnknownAccountException, NotEnoughMoneyException, UnknownNameOperationException {
+    public void info() throws IOException, UnknownNameOperationException, UnknownAccountException, NotEnoughMoneyException {
 
-                try (
-                        Connection connection = DriverManager
-                                .getConnection("jdbc:h2:mem:test;INIT=RUNSCRIPT FROM './HomeTask8/schema.sql'\\;RUNSCRIPT FROM './HomeTask8/data.sql'");
-                        Statement statement = connection.createStatement()
-                ) {
-                    ResultSet resultSet = statement.executeQuery(SELECT);
-                    while (resultSet.next()) {
-                        System.out.println(resultSet.getString(2));
-                    }
-                }
 
         accountService.createNew();
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -34,7 +25,7 @@ public class BankFacade {
         String[] array = s.split("\\W");
 
         switch (array[0]) {
-            case "balance" -> accountService.balance(Integer.parseInt(array[1]));
+            case "balance" -> accountService.balance(array[1]);
             case "withdraw" -> accountService.withdraw(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
             case "deposit" -> accountService.deposit(Integer.parseInt(array[1]), Integer.parseInt(array[2]));
             case "transfer" -> accountService.transfer(Integer.parseInt(array[1]), Integer.parseInt(array[2]), Integer.parseInt(array[3]));
@@ -42,4 +33,5 @@ public class BankFacade {
 
             default -> throw new UnknownNameOperationException("Неизвестная операция " + array[0]);
         }
+    }
 }
