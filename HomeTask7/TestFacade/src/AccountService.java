@@ -63,7 +63,7 @@ public class AccountService {
 
     }
 
-    public void balance(int accountId) throws UnknownAccountException, IOException {
+    void balance(int accountId) throws UnknownAccountException, IOException {
 
         ArrayList<Account> accountsBalance = readAccountData();
 
@@ -93,7 +93,7 @@ public class AccountService {
     }
 
 
-    public void deposit(int accountId, int amount) throws
+    void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
         ArrayList<Account> accountsDeposit = readAccountData();
 
@@ -137,7 +137,7 @@ public class AccountService {
     }
 
 
-    public void transfer(int from, int to, int amount) throws
+    void transfer(int from, int to, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
         ArrayList<Account> accountsTransfer = readAccountData();
@@ -226,7 +226,7 @@ public class AccountService {
     }
 
 
-    public void create(int parseInt, String s) throws IOException, UnknownAccountException {
+    void create(int parseInt, String s) throws IOException, UnknownAccountException {
 
         ArrayList<Account> accountsCreate = readAccountData();
         String pathCreate = "HomeTask7\\data.txt";

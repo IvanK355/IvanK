@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class AccountService {
 
-    public void withdraw(String accountId, String amount) throws SQLException {
+    void withdraw(String accountId, String amount) throws UnknownAccountException, NotEnoughMoneyException, SQLException {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
@@ -37,9 +37,17 @@ public class AccountService {
                     int id = resultSet.getInt(1);
                     String name = resultSet.getString(2);
                     amount1 = resultSet.getInt(3);
-                    System.out.println(id + " " + name + " " + amount1);
+                    System.out.println("Номер счета: "+id);
+                    System.out.println("Владелец счета: "+name);
+                    System.out.println("Сумма до снятия денежных средств: "+amount1);
+
                 }
+                System.out.println("Сняли: " + amount);
                 amount1 -= Integer.parseInt(amount);
+
+                if (amount1<0){
+                    throw new NotEnoughMoneyException("Недостаточно средств");
+                }
 
                 String sql = "update account set amount = ? WHERE id = ?";
                 preparedStatement = connection.prepareStatement(sql);
@@ -56,11 +64,13 @@ public class AccountService {
                     int id = resultSet.getInt(1);
                     String name = resultSet.getString(2);
                     amount1 = resultSet.getInt(3);
-                    System.out.println(id + " " + name + " " + amount1);
+                    System.out.println("Номер счета: "+id);
+                    System.out.println("Владелец счета: "+name);
+                    System.out.println("Сумма после снятия денежных средств: "+amount1);
                 }
 
 
-            } catch (SQLException | UnknownAccountException throwables) {
+            } catch (SQLException | UnknownAccountException | NotEnoughMoneyException throwables) {
                 throwables.printStackTrace();
             }
         } finally {
