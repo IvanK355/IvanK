@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask8/src/main/java/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/src/main/java/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask8/src/main/java/BankFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask8/src/main/java/BankFacade.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,13 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00044" summary="5 DZ final2 - оказалось не так сложно )">
-      <created>1600766441196</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1600766441196</updated>
     </task>
     <task id="LOCAL-00045" summary="5 DZ task 2 v1">
       <created>1600774027097</created>
@@ -514,7 +505,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601294227968</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="HomeTask8 v11">
+      <created>1601315015532</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1601315015532</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -536,7 +534,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ 7 v5" />
     <MESSAGE value="ДЗ 7 v6" />
     <MESSAGE value="ДЗ 7 v7" />
     <MESSAGE value="ДЗ 7 v8" />
@@ -561,7 +558,8 @@
     <MESSAGE value="HomeTask8 v8 balance made" />
     <MESSAGE value="HomeTask8 v9 all method made" />
     <MESSAGE value="HomeTask8 v10 check all ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="HomeTask8 v10 check all ok" />
+    <MESSAGE value="HomeTask8 v11" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeTask8 v11" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -636,22 +634,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="222" key="GridCell.Tab.0.bottom" timestamp="1601294485257">
+    <state width="1323" height="222" key="GridCell.Tab.0.bottom" timestamp="1601315280488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601294485257" />
-    <state width="1323" height="222" key="GridCell.Tab.0.center" timestamp="1601294485257">
+    <state width="1323" height="222" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1601315280488" />
+    <state width="1323" height="222" key="GridCell.Tab.0.center" timestamp="1601315280488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601294485257" />
-    <state width="1323" height="222" key="GridCell.Tab.0.left" timestamp="1601294485257">
+    <state width="1323" height="222" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1601315280488" />
+    <state width="1323" height="222" key="GridCell.Tab.0.left" timestamp="1601315280488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601294485257" />
-    <state width="1323" height="222" key="GridCell.Tab.0.right" timestamp="1601294485257">
+    <state width="1323" height="222" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1601315280488" />
+    <state width="1323" height="222" key="GridCell.Tab.0.right" timestamp="1601315280488">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601294485257" />
+    <state width="1323" height="222" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1601315280488" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -668,10 +666,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601294231193">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1601315016058">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601294231193" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1601315016058" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

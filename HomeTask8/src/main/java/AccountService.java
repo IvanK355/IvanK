@@ -29,6 +29,7 @@ public class AccountService {
                 preparedStatement = null;
                 int amount1 = 0;
 
+
                 preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
                 preparedStatement.setInt(1, Integer.parseInt(accountId));
                 resultSet = preparedStatement.executeQuery();
@@ -37,15 +38,16 @@ public class AccountService {
                     int id = resultSet.getInt(1);
                     String name = resultSet.getString(2);
                     amount1 = resultSet.getInt(3);
-                    System.out.println("Номер счета: "+id);
-                    System.out.println("Владелец счета: "+name);
-                    System.out.println("Сумма до снятия денежных средств: "+amount1);
+                    System.out.println("Номер счета: " + id);
+                    System.out.println("Владелец счета: " + name);
+                    System.out.println("Сумма до снятия денежных средств: " + amount1);
 
                 }
                 System.out.println("Сняли: " + amount);
+
                 amount1 -= Integer.parseInt(amount);
 
-                if (amount1<0){
+                if (amount1 < 0) {
                     throw new NotEnoughMoneyException("Недостаточно средств");
                 }
 
@@ -64,13 +66,14 @@ public class AccountService {
                     int id = resultSet.getInt(1);
                     String name = resultSet.getString(2);
                     amount1 = resultSet.getInt(3);
-                    System.out.println("Номер счета: "+id);
-                    System.out.println("Владелец счета: "+name);
-                    System.out.println("Сумма после снятия денежных средств: "+amount1);
+                    System.out.println("Номер счета: " + id);
+                    System.out.println("Владелец счета: " + name);
+                    System.out.println("Сумма после снятия денежных средств: " + amount1);
                 }
 
 
-            } catch (SQLException | UnknownAccountException | NotEnoughMoneyException throwables) {
+            } catch (SQLException | UnknownAccountException |
+                    NotEnoughMoneyException throwables) {
                 throwables.printStackTrace();
             }
         } finally {
@@ -264,7 +267,7 @@ public class AccountService {
                 preparedStatement.setInt(2, Integer.parseInt(from));
                 int rows = preparedStatement.executeUpdate();
 
-                String sql1= "update account set amount = ? WHERE id = ?";
+                String sql1 = "update account set amount = ? WHERE id = ?";
                 preparedStatement = connection.prepareStatement(sql1);
                 preparedStatement.setInt(1, amount2);
                 preparedStatement.setInt(2, Integer.parseInt(to));
@@ -315,7 +318,7 @@ public class AccountService {
         }
     }
 
-    void sqlSelect (){
+    void sqlSelect() {
 
     }
 
