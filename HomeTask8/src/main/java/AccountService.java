@@ -1,9 +1,5 @@
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.StandardOpenOption;
 import java.sql.*;
-import java.util.ArrayList;
 
 public class AccountService {
 
@@ -222,9 +218,9 @@ public class AccountService {
                 int amount1 = 0;
                 int amount2 = 0;
 
-                preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id in (?,?)");
+                preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
                 preparedStatement.setInt(1, Integer.parseInt(from));
-                preparedStatement.setInt(2, Integer.parseInt(to));
+
                 resultSet = preparedStatement.executeQuery();
 
                 while (resultSet.next()) {
@@ -234,6 +230,22 @@ public class AccountService {
                     System.out.println(id + " " + name + " " + amount1);
                 }
                 amount1 -= Integer.parseInt(amount);
+
+
+                preparedStatement = null;
+
+                preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
+
+                preparedStatement.setInt(1, Integer.parseInt(to));
+                resultSet = preparedStatement.executeQuery();
+
+                while (resultSet.next()) {
+                    int id = resultSet.getInt(1);
+                    String name = resultSet.getString(2);
+                    amount2 = resultSet.getInt(3);
+                    System.out.println(id + " " + name + " " + amount1);
+                }
+
                 amount2 += Integer.parseInt(amount);
 
                 String sql = "update account set amount = ? WHERE id = ?";
