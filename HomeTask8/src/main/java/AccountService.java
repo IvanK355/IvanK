@@ -100,7 +100,16 @@ public class AccountService {
                 preparedStatement.setInt(2, Integer.parseInt(accountId));
                 int rows = preparedStatement.executeUpdate();
 
-            } catch (SQLException throwables) {
+                preparedStatement = null;
+
+                preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
+                preparedStatement.setInt(1, Integer.parseInt(accountId));
+                ResultSet resultSet = preparedStatement.executeQuery();
+                if (!resultSet.next()) {
+                    throw new UnknownAccountException("Счет неверный");
+                }
+
+            } catch (SQLException | UnknownAccountException throwables) {
                 throwables.printStackTrace();
             }
         } finally {
