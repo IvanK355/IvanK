@@ -3,7 +3,7 @@ import java.sql.*;
 
 public class AccountService {
 
-    void withdraw(String accountId, String amount) throws UnknownAccountException, NotEnoughMoneyException, SQLException {
+    void withdraw(String accountId, String amount) throws SQLException {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
@@ -314,6 +314,11 @@ public class AccountService {
             e.printStackTrace();
         }
     }
+
+    void sqlSelect (){
+
+    }
+
 }
 
 

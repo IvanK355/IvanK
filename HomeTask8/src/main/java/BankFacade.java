@@ -14,7 +14,7 @@ public class BankFacade {
         this.accountService = new AccountService();
     }
 
-    public void info() throws IOException, UnknownNameOperationException, UnknownAccountException, NotEnoughMoneyException, SQLException {
+    public void info() throws IOException, UnknownNameOperationException, SQLException, UnknownAccountException, NotEnoughMoneyException {
 
 
         accountService.createNew();
