@@ -76,24 +76,21 @@ public class AccountService {
         lastTo = last;
 
         newAmountFrom = Integer.parseInt(lastFrom) - amount;
+
         if (newAmountFrom < 0) {
             throw new NotEnoughMoneyException("Недостаточно стредств на счете: " + from);
         }
-
-        System.out.println("Перевели: " + amount);
-
-        setNewEntry(newAmountFrom, pathFrom);
-        System.out.print("Баланс счета " + from + " после перевода: ");
-        System.out.println(newAmountFrom);
-
         newAmountTo = Integer.parseInt(lastTo) + amount;
 
+        System.out.println();
+        System.out.println("Перевели: " + amount);
+        System.out.println();
+
+        setNewEntry(newAmountFrom, pathFrom);
         setNewEntry(newAmountTo, pathTo);
-        System.out.print("Баланс счета " + to + " после пополнения: ");
-        System.out.println(newAmountTo);
-
+        getBalance(from);
+        getBalance(to);
     }
-
 
     void create(int parseInt, String s) throws IOException, UnknownAccountException {
 
