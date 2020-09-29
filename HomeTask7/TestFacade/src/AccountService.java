@@ -23,36 +23,14 @@ public class AccountService {
 
     public void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
 
-        ArrayList<Account> accountsWithdraw = readAccountData();
+        getBalance(accountId);
 
-        int count = 0;
-        int id = 0;
-        for (int i = 0; i < accountsWithdraw.size(); i++) {
-            if (accountsWithdraw.get(i).getId() == accountId) {
-                count++;
-                id = i;
-            }
-        }
-
-        if (count == 0) {
-            throw new UnknownAccountException("Счет неверный");
-        }
-
-        String parhWithdraw = "HomeTask7\\" + accountsWithdraw.get(id).getId() + ".txt";
-
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(parhWithdraw));
-        while ((current = bufferedReader.readLine()) != null) {
-            last = current;
-        }
-
+        String parhWithdraw = "HomeTask7\\" + accountId+ ".txt";
         newAmount = Integer.parseInt(last) - amount;
         if (newAmount < 0) {
             throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
         }
-        System.out.println("Счет: " + accountsWithdraw.get(id).getId());
-        System.out.println("Владелец счета: " + accountsWithdraw.get(id).getHolder());
-        System.out.print("Баланс счета до снятия: ");
-        System.out.println(last);
+
         System.out.println("Сняли: " + amount);
 
         BufferedWriter writer = Files.newBufferedWriter(Path.of(parhWithdraw), StandardOpenOption.APPEND);
@@ -65,70 +43,26 @@ public class AccountService {
 
     void balance(int accountId) throws UnknownAccountException, IOException {
 
-        ArrayList<Account> accountsBalance = readAccountData();
+        getBalance(accountId);
 
-        int count = 0;
-        int id = 0;
-        for (int i = 0; i < accountsBalance.size(); i++) {
-            if (accountsBalance.get(i).getId() == accountId) {
-                count++;
-                id = i;
-            }
-        }
-
-        if (count == 0) {
-            throw new UnknownAccountException("Счет неверный");
-        }
-
-        String p = accountsBalance.get(id).getAmount();
-
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
-        while ((current = bufferedReader.readLine()) != null) {
-            last = current;
-        }
-        System.out.println("Счет: " + accountsBalance.get(id).getId());
-        System.out.println("Владелец счета: " + accountsBalance.get(id).getHolder());
-        System.out.print("Баланс счета: ");
-        System.out.println(last);
     }
 
 
     void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
-        ArrayList<Account> accountsDeposit = readAccountData();
+        getBalance(accountId);
 
-        int count = 0;
-        int id = 0;
-        for (int i = 0; i < accountsDeposit.size(); i++) {
-            if (accountsDeposit.get(i).getId() == accountId) {
-                count++;
-                id = i;
-            }
-        }
-
-        if (count == 0) {
-            throw new UnknownAccountException("Счет неверный");
-        }
-
-        String p = accountsDeposit.get(id).getAmount();
-
-        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
-        while ((current = bufferedReader.readLine()) != null) {
-            last = current;
-        }
+        String parhDeposit = "HomeTask7\\" + accountId+ ".txt";
 
         newAmount = Integer.parseInt(last) + amount;
         if (newAmount < 0) {
             throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
         }
-        System.out.println("Счет: " + accountsDeposit.get(id).getId());
-        System.out.println("Владелец счета: " + accountsDeposit.get(id).getHolder());
-        System.out.print("Баланс счета до пополнения: ");
-        System.out.println(last);
+
         System.out.println("Внесли: " + amount);
 
 
-        BufferedWriter writer = Files.newBufferedWriter(Path.of(p), StandardOpenOption.APPEND);
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(parhDeposit), StandardOpenOption.APPEND);
         writer.write("\n" + newAmount);
         writer.close();
         System.out.print("Баланс счета после пополнения: ");
@@ -292,6 +226,37 @@ public class AccountService {
                 writer.close();
             }
         }
+    }
+
+    String getBalance (int accountId) throws UnknownAccountException, IOException {
+
+        ArrayList<Account> accountsBalance = readAccountData();
+
+        int count = 0;
+        int id = 0;
+        for (int i = 0; i < accountsBalance.size(); i++) {
+            if (accountsBalance.get(i).getId() == accountId) {
+                count++;
+                id = i;
+            }
+        }
+
+        if (count == 0) {
+            throw new UnknownAccountException("Счет неверный");
+        }
+
+        String p = accountsBalance.get(id).getAmount();
+
+        BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
+        while ((current = bufferedReader.readLine()) != null) {
+            last = current;
+        }
+        System.out.println("Счет: " + accountsBalance.get(id).getId());
+        System.out.println("Владелец счета: " + accountsBalance.get(id).getHolder());
+        System.out.print("Баланс счета: ");
+        System.out.println(last);
+
+        return last;
     }
 }
 
