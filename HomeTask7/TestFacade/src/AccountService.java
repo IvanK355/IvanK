@@ -6,10 +6,9 @@ import java.util.ArrayList;
 
 public class AccountService {
 
-    private static String current;
     private static String last;
     private static int newAmount;
-    private static String pathData = "HomeTask7\\data.txt";
+    private static final String pathData = "HomeTask7\\data.txt";
 
     private ArrayList<Account> readAccountData() throws IOException {
         ArrayList<Account> accounts = new ArrayList<>();
@@ -25,7 +24,7 @@ public class AccountService {
 
         getBalance(accountId);
 
-        String parhWithdraw = "HomeTask7\\" + accountId+ ".txt";
+        String parhWithdraw = "HomeTask7\\" + accountId + ".txt";
         newAmount = Integer.parseInt(last) - amount;
         if (newAmount < 0) {
             throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
@@ -52,7 +51,7 @@ public class AccountService {
             NotEnoughMoneyException, UnknownAccountException, IOException {
         getBalance(accountId);
 
-        String parhDeposit = "HomeTask7\\" + accountId+ ".txt";
+        String parhDeposit = "HomeTask7\\" + accountId + ".txt";
 
         newAmount = Integer.parseInt(last) + amount;
         if (newAmount < 0) {
@@ -74,41 +73,19 @@ public class AccountService {
     void transfer(int from, int to, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
-        ArrayList<Account> accountsTransfer = readAccountData();
-
         int newAmountTo;
         int newAmountFrom;
         String currentFrom;
-        String lastFrom = null;
+        String lastFrom;
         String currentTo;
-        String lastTo = null;
+        String lastTo;
 
-        int countFrom = 0;
-        int idFrom = 0;
-        for (int i = 0; i < accountsTransfer.size(); i++) {
-            if (accountsTransfer.get(i).getId() == from) {
-                countFrom++;
-                idFrom = i;
-            }
-        }
+        getBalance(from);
+        lastFrom = last;
+        getBalance(to);
+        lastTo = last;
 
-        int countTo = 0;
-        int idTo = 0;
-        for (int i = 0; i < accountsTransfer.size(); i++) {
-            if (accountsTransfer.get(i).getId() == to) {
-                countTo++;
-                idTo = i;
-            }
-        }
-
-        if (countFrom == 0) {
-            throw new UnknownAccountException("Счет Отправителя неверный");
-        } else if (countTo == 0) {
-            throw new UnknownAccountException("Счет Получателя неверный");
-        }
-
-
-        String pathFrom = accountsTransfer.get(idFrom).getAmount();
+        String pathFrom = "HomeTask7\\" + from + ".txt";
 
         BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(pathFrom));
         while ((currentFrom = bufferedReaderFrom.readLine()) != null) {
@@ -117,22 +94,19 @@ public class AccountService {
 
         newAmountFrom = Integer.parseInt(lastFrom) - amount;
         if (newAmountFrom < 0) {
-            throw new NotEnoughMoneyException("Недостаточно стредств на счете: " + accountsTransfer.get(idFrom).getId());
+            throw new NotEnoughMoneyException("Недостаточно стредств на счете: " + from);
         }
-        System.out.println("Счет: " + accountsTransfer.get(idFrom).getId());
-        System.out.println("Владелец счета: " + accountsTransfer.get(idFrom).getHolder());
-        System.out.print("Баланс счета до перевода: ");
-        System.out.println(lastFrom);
+
         System.out.println("Перевели: " + amount);
 
 
         BufferedWriter writer = Files.newBufferedWriter(Path.of(pathFrom), StandardOpenOption.APPEND);
         writer.write("\n" + newAmountFrom);
         writer.close();
-        System.out.print("Баланс счета после перевода: ");
+        System.out.print("Баланс счета " + from + " после перевода: ");
         System.out.println(newAmountFrom);
 
-        String pathTo = accountsTransfer.get(idTo).getAmount();
+        String pathTo = "HomeTask7\\" + to + ".txt";
 
         BufferedReader bufferedReaderTo = new BufferedReader(new FileReader(pathTo));
 
@@ -141,20 +115,12 @@ public class AccountService {
         }
 
         newAmountTo = Integer.parseInt(lastTo) + amount;
-        if (newAmountTo < 0) {
-            throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
-        }
-        System.out.println("Счет: " + accountsTransfer.get(idTo).getId());
-        System.out.println("Владелец счета: " + accountsTransfer.get(idTo).getHolder());
-        System.out.print("Баланс счета до пополнения: ");
-        System.out.println(lastTo);
-        System.out.println("Перевели: " + amount);
 
 
         BufferedWriter writerTo = Files.newBufferedWriter(Path.of(pathTo), StandardOpenOption.APPEND);
         writerTo.write("\n" + newAmountTo);
         writerTo.close();
-        System.out.print("Баланс счета после пополнения: ");
+        System.out.print("Баланс счета " + to + " после пополнения: ");
         System.out.println(newAmountTo);
 
     }
@@ -228,7 +194,7 @@ public class AccountService {
         }
     }
 
-    String getBalance (int accountId) throws UnknownAccountException, IOException {
+    void getBalance(int accountId) throws UnknownAccountException, IOException {
 
         ArrayList<Account> accountsBalance = readAccountData();
 
@@ -248,6 +214,7 @@ public class AccountService {
         String p = accountsBalance.get(id).getAmount();
 
         BufferedReader bufferedReader = new BufferedReader(new FileReader(p));
+        String current;
         while ((current = bufferedReader.readLine()) != null) {
             last = current;
         }
@@ -256,7 +223,6 @@ public class AccountService {
         System.out.print("Баланс счета: ");
         System.out.println(last);
 
-        return last;
     }
 }
 
