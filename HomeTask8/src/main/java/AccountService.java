@@ -89,6 +89,18 @@ public class AccountService {
         PreparedStatement preparedStatement = null;
         try {
             try {
+                int amount = 0;
+                preparedStatement = null;
+                connection = DriverManager
+                        .getConnection("jdbc:h2:mem:ACCOUNT");
+                preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
+                preparedStatement.setInt(1, Integer.parseInt(accountId));
+                ResultSet resultSet = preparedStatement.executeQuery();
+                while (resultSet.next()) {
+                    amount = resultSet.getInt(3);
+                }
+
+                if ((amount-Integer.parseInt(amount2))<0) {throw new NotEnoughMoneyException("Недостаточно средств");}
 
                 System.out.println("Сняли: " + amount2);
 
@@ -104,12 +116,12 @@ public class AccountService {
 
                 preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
                 preparedStatement.setInt(1, Integer.parseInt(accountId));
-                ResultSet resultSet = preparedStatement.executeQuery();
+                resultSet = preparedStatement.executeQuery();
                 if (!resultSet.next()) {
                     throw new UnknownAccountException("Счет неверный");
                 }
 
-            } catch (SQLException | UnknownAccountException throwables) {
+            } catch (SQLException | UnknownAccountException | NotEnoughMoneyException throwables) {
                 throwables.printStackTrace();
             }
         } finally {
