@@ -56,7 +56,7 @@ public class AccountService {
                 String name;
                 int amount;
                 if (!resultSet.next()) {
-                    throw new UnknownAccountException("Счет неверный");
+                    throw new UnknownAccountException("Счет: " + accountId + " неверный");
                 }
                 resultSet = preparedStatement.executeQuery();
                 while (resultSet.next()) {
@@ -109,13 +109,11 @@ public class AccountService {
                 preparedStatement.setInt(1, Integer.parseInt(accountId));
                 resultSet = preparedStatement.executeQuery();
                 if (!resultSet.next()) {
-                    throw new UnknownAccountException("Счет неверный");
+                    throw new UnknownAccountException("Счет: " + accountId + " неверный");
                 }
 
-            } catch (NotEnoughMoneyException e) {
-              throw new NotEnoughMoneyException("Недостаточно средств на счете!" +accountId);
-            } catch (UnknownAccountException e) {
-                e.printStackTrace();
+            } catch (NotEnoughMoneyException | UnknownAccountException e) {
+              throw new NotEnoughMoneyException("Недостаточно средств на счете! #" +accountId);
             }
         } finally {
             preparedStatement.close();
@@ -146,7 +144,7 @@ public class AccountService {
                 preparedStatement.setInt(1, Integer.parseInt(accountId));
                 ResultSet resultSet = preparedStatement.executeQuery();
                 if (!resultSet.next()) {
-                    throw new UnknownAccountException("Счет неверный");
+                    throw new UnknownAccountException("Счет: " + accountId + " неверный");
                 }
 
             } catch (SQLException | UnknownAccountException throwables) {
