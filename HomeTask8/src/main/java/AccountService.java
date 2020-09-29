@@ -2,7 +2,7 @@ import java.sql.*;
 
 public class AccountService {
 
-    void withdraw(String accountId, String amount2) throws SQLException, UnknownAccountException {
+    void withdraw(String accountId, String amount2) throws SQLException, UnknownAccountException, NotEnoughMoneyException {
         sqlSelect(accountId);
         updateWithdraw(accountId, amount2);
         sqlSelect(accountId);
@@ -19,7 +19,7 @@ public class AccountService {
         sqlSelect(accountId);
     }
 
-    public void transfer(String from, String to, String amount) throws SQLException, UnknownAccountException {
+    public void transfer(String from, String to, String amount) throws SQLException, UnknownAccountException, NotEnoughMoneyException {
 
         balance(from);
         balance(to);
@@ -27,7 +27,6 @@ public class AccountService {
         updateDeposit(to, amount);
         balance(from);
         balance(to);
-
     }
 
     void createNew() {
@@ -76,8 +75,7 @@ public class AccountService {
         }
     }
 
-
-    void updateWithdraw(String accountId, String amount2) throws SQLException {
+  void updateWithdraw(String accountId, String amount2) throws SQLException, NotEnoughMoneyException {
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -114,8 +112,10 @@ public class AccountService {
                     throw new UnknownAccountException("Счет неверный");
                 }
 
-            } catch (SQLException | UnknownAccountException | NotEnoughMoneyException throwables) {
-                throwables.printStackTrace();
+            } catch (NotEnoughMoneyException e) {
+              throw new NotEnoughMoneyException("Недостаточно средств на счете!" +accountId);
+            } catch (UnknownAccountException e) {
+                e.printStackTrace();
             }
         } finally {
             preparedStatement.close();
@@ -124,6 +124,7 @@ public class AccountService {
     }
 
     void updateDeposit(String accountId, String amount2) throws SQLException {
+
         Connection connection = null;
         PreparedStatement preparedStatement = null;
         try {
