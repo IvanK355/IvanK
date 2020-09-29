@@ -1,4 +1,3 @@
-import java.io.*;
 import java.sql.*;
 
 public class AccountService {
@@ -32,15 +31,13 @@ public class AccountService {
     }
 
     void createNew() {
-        String sql = "SELECT * FROM ACCOUNT";
-        try (
-                Connection connection = DriverManager
-                        .getConnection("jdbc:h2:mem:ACCOUNT;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM './HomeTask8/schema.sql'\\;RUNSCRIPT FROM './HomeTask8/data.sql'");
-                Statement statement = connection.createStatement()
-        ) {
-            ResultSet resultSet = statement.executeQuery(sql);
 
-        } catch (SQLException e) {
+        try {
+            DriverManager
+                    .getConnection("jdbc:h2:mem:ACCOUNT;DB_CLOSE_DELAY=-1;INIT=RUNSCRIPT FROM './HomeTask8/schema.sql'\\;RUNSCRIPT FROM './HomeTask8/data.sql'");
+        }
+
+        catch (SQLException e) {
             e.printStackTrace();
         }
     }
@@ -70,11 +67,8 @@ public class AccountService {
                     System.out.println(id + " " + name + " " + amount);
                 }
 
-
-            } catch (SQLException throwables) {
+            } catch (SQLException | NumberFormatException throwables) {
                 throwables.printStackTrace();
-            } catch (NumberFormatException e) {
-                e.printStackTrace();
             }
         } finally {
             preparedStatement.close();
@@ -90,7 +84,6 @@ public class AccountService {
         try {
             try {
                 int amount = 0;
-                preparedStatement = null;
                 connection = DriverManager
                         .getConnection("jdbc:h2:mem:ACCOUNT");
                 preparedStatement = connection.prepareStatement("SELECT * FROM account WHERE id = ?");
@@ -110,7 +103,7 @@ public class AccountService {
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setInt(1, Integer.parseInt(amount2));
                 preparedStatement.setInt(2, Integer.parseInt(accountId));
-                int rows = preparedStatement.executeUpdate();
+                preparedStatement.executeUpdate();
 
                 preparedStatement = null;
 
@@ -144,7 +137,7 @@ public class AccountService {
                 preparedStatement = connection.prepareStatement(sql);
                 preparedStatement.setInt(1, Integer.parseInt(amount2));
                 preparedStatement.setInt(2, Integer.parseInt(accountId));
-                int rows = preparedStatement.executeUpdate();
+                preparedStatement.executeUpdate();
 
                 preparedStatement = null;
 
