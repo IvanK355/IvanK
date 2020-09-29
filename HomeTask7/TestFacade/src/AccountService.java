@@ -21,10 +21,9 @@ public class AccountService {
     }
 
     public void withdraw(int accountId, int amount) throws NotEnoughMoneyException, UnknownAccountException, IOException {
-
+        String parhWithdraw = "HomeTask7\\" + accountId + ".txt";
         getBalance(accountId);
 
-        String parhWithdraw = "HomeTask7\\" + accountId + ".txt";
         newAmount = Integer.parseInt(last) - amount;
         if (newAmount < 0) {
             throw new NotEnoughMoneyException("Недостаточно стредств на счете!");
@@ -32,11 +31,8 @@ public class AccountService {
 
         System.out.println("Сняли: " + amount);
 
-        BufferedWriter writer = Files.newBufferedWriter(Path.of(parhWithdraw), StandardOpenOption.APPEND);
-        writer.write("\n" + newAmount);
-        writer.close();
-        System.out.print("Баланс счета после снятия: ");
-        System.out.println(newAmount);
+        setNewEntry(newAmount, parhWithdraw);
+        getBalance(accountId);
 
     }
 
@@ -46,12 +42,11 @@ public class AccountService {
 
     }
 
-
     void deposit(int accountId, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
-        getBalance(accountId);
-
         String parhDeposit = "HomeTask7\\" + accountId + ".txt";
+
+        getBalance(accountId);
 
         newAmount = Integer.parseInt(last) + amount;
         if (newAmount < 0) {
@@ -60,37 +55,25 @@ public class AccountService {
 
         System.out.println("Внесли: " + amount);
 
-
-        BufferedWriter writer = Files.newBufferedWriter(Path.of(parhDeposit), StandardOpenOption.APPEND);
-        writer.write("\n" + newAmount);
-        writer.close();
-        System.out.print("Баланс счета после пополнения: ");
-        System.out.println(newAmount);
+        setNewEntry(newAmount, parhDeposit);
+        getBalance(accountId);
 
     }
-
 
     void transfer(int from, int to, int amount) throws
             NotEnoughMoneyException, UnknownAccountException, IOException {
 
         int newAmountTo;
         int newAmountFrom;
-        String currentFrom;
         String lastFrom;
-        String currentTo;
         String lastTo;
+        String pathFrom = "HomeTask7\\" + from + ".txt";
+        String pathTo = "HomeTask7\\" + to + ".txt";
 
         getBalance(from);
         lastFrom = last;
         getBalance(to);
         lastTo = last;
-
-        String pathFrom = "HomeTask7\\" + from + ".txt";
-
-        BufferedReader bufferedReaderFrom = new BufferedReader(new FileReader(pathFrom));
-        while ((currentFrom = bufferedReaderFrom.readLine()) != null) {
-            lastFrom = currentFrom;
-        }
 
         newAmountFrom = Integer.parseInt(lastFrom) - amount;
         if (newAmountFrom < 0) {
@@ -99,27 +82,13 @@ public class AccountService {
 
         System.out.println("Перевели: " + amount);
 
-
-        BufferedWriter writer = Files.newBufferedWriter(Path.of(pathFrom), StandardOpenOption.APPEND);
-        writer.write("\n" + newAmountFrom);
-        writer.close();
+        setNewEntry(newAmountFrom, pathFrom);
         System.out.print("Баланс счета " + from + " после перевода: ");
         System.out.println(newAmountFrom);
 
-        String pathTo = "HomeTask7\\" + to + ".txt";
-
-        BufferedReader bufferedReaderTo = new BufferedReader(new FileReader(pathTo));
-
-        while ((currentTo = bufferedReaderTo.readLine()) != null) {
-            lastTo = currentTo;
-        }
-
         newAmountTo = Integer.parseInt(lastTo) + amount;
 
-
-        BufferedWriter writerTo = Files.newBufferedWriter(Path.of(pathTo), StandardOpenOption.APPEND);
-        writerTo.write("\n" + newAmountTo);
-        writerTo.close();
+        setNewEntry(newAmountTo, pathTo);
         System.out.print("Баланс счета " + to + " после пополнения: ");
         System.out.println(newAmountTo);
 
@@ -194,7 +163,7 @@ public class AccountService {
         }
     }
 
-    void getBalance(int accountId) throws UnknownAccountException, IOException {
+    String getBalance(int accountId) throws UnknownAccountException, IOException {
 
         ArrayList<Account> accountsBalance = readAccountData();
 
@@ -223,6 +192,15 @@ public class AccountService {
         System.out.print("Баланс счета: ");
         System.out.println(last);
 
+        return last;
+
+    }
+
+    void setNewEntry(int newAmountEntry, String path) throws IOException {
+
+        BufferedWriter writer = Files.newBufferedWriter(Path.of(path), StandardOpenOption.APPEND);
+        writer.write("\n" + newAmountEntry);
+        writer.close();
     }
 }
 
