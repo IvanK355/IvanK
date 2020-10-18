@@ -4,34 +4,30 @@ public class FileLogger extends Caculator {
 
 
     @Override
-    public int makeMultiplication(int a, int b) {
-        String s = "Выражение "+a+ " * " + b +" = " + super.makeMultiplication(a, b);
-        log(s);
-        return super.makeMultiplication(a, b);
+    public String makeMultiplication(int a, int b) {
+
+        log(super.makeMultiplication(a, b));
+        return null;
     }
 
     @Override
-    public int makeSum(int a, int b) {
-        String s = "Выражение "+a+ " + " + b +" = " + super.makeSum(a, b);
-        log(s);
-        return super.makeSum(a, b);
+    public String makeSum(int a, int b) {
+        log(super.makeSum(a, b));
+        return null;
     }
 
     @Override
-    public int makeSubtraction(int a, int b) {
+    public String makeSubtraction(int a, int b) {
 
-        String s = "Выражение "+a+ " - " + b +" = " + super.makeSubtraction(a, b);
-        log(s);
-        return super.makeSubtraction(a, b);
+        log(super.makeSubtraction(a, b));
+        return null;
     }
 
     @Override
-    public Double makeDivision(int a, int b) {
-        String s = "Выражение "+a+ " / " + b +" = " + super.makeDivision(a, b);
-        log(s);
-        return super.makeDivision(a, b);
+    public String makeDivision(int a, int b) {
+        log(super.makeDivision(a, b));
+        return null;
     }
-
     public void log(String message) {
         System.out.println("FileLogger – Log into file:  " + message);
     }

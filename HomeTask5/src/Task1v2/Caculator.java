@@ -2,19 +2,22 @@ package Task1v2;
 
 public abstract class Caculator {
 
-    public int makeMultiplication(int a, int b) {
-        return a*b;
+    private String s;
+
+    public String makeMultiplication(int a, int b) {
+        return s = "Выражение "+a+ " * " + b +" = " + (a*b);
     }
 
-    public int makeSum(int a, int b) {
-        return a+b;
+    public String makeSum(int a, int b) {
+
+            return s = "Выражение "+a+ " + " + b +" = " + (a+b);
     }
 
-    public int makeSubtraction(int a, int b) {
-        return a-b;
+    public String makeSubtraction(int a, int b) {
+        return s = "Выражение "+a+ " - " + b +" = " + (a-b);
     }
 
-    public Double makeDivision(int a, int b) {
-        return a*1.0/b;
+    public String makeDivision(int a, int b) {
+        return s = "Выражение "+a+ " / " + b +" = " + (a*1.0/b);
     }
 }
