@@ -1,6 +1,6 @@
 package Task2;
 
-public class Cpu {
+public class Cpu implements Computer {
 
     private String cpuClockFrequency;
     private int cpuQtyCore;
@@ -16,7 +16,9 @@ public class Cpu {
         this.cpuMaker = "Intel";
     }
 
-    public void getInfo() {
+
+    @Override
+    public void info() {
         System.out.println("Характеристика процессора");
         System.out.println(
                 "тактовая частота " + cpuClockFrequency + "\n" +
@@ -24,5 +26,6 @@ public class Cpu {
                         "кеш память " + cpuCacheMemory + "\n" +
                         "название " + cpuName + "\n" +
                         "производитель " + cpuMaker);
+
     }
 }

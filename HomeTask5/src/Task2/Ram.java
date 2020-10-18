@@ -1,6 +1,6 @@
 package Task2;
 
-public class Ram {
+public class Ram implements Computer{
     private String ramMaker;
     private String ramMamory;
     private String ramFrequency;
@@ -13,7 +13,8 @@ public class Ram {
         this.ramType = "DRAM";
     }
 
-    public void getInfo() {
+    @Override
+    public void info() {
         System.out.println("Характеристика оперативной памяти");
         System.out.println(
                 "частота " + ramFrequency + "\n" +

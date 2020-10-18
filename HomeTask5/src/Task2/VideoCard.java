@@ -1,6 +1,6 @@
 package Task2;
 
-public class VideoCard {
+public class VideoCard implements Computer{
 
     private String cardMemory;
     private String cardTypeMemory;
@@ -15,7 +15,8 @@ public class VideoCard {
         this.cardMaker = "NVideo";
     }
 
-    public void getInfo() {
+    @Override
+    public void info() {
         System.out.println("Характеристика видеокарты");
         System.out.println(
                 "охлаждение " + cardCooler[0] + "\n" +

@@ -1,6 +1,6 @@
 package Task2;
 
-public class StorageDevice {
+public class StorageDevice implements Computer {
     private String sdMemory;
     private String sdFormFactor;
     private String[] sdType = new String[2];
@@ -14,7 +14,8 @@ public class StorageDevice {
         this.sdMaker = "IBM";
     }
 
-    public void getInfo() {
+    @Override
+    public void info() {
         System.out.println("Характеристика накопителя");
         System.out.println(
                 "форм-фактор " + sdFormFactor + "\n" +
