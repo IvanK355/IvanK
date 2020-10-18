@@ -1,15 +1,7 @@
 package Task2;
 
-public class Monitor implements Computer{
-    private String monitorMaker;
-
+public class Monitor extends Computer{
     public Monitor() {
-        this.monitorMaker = "NEC";
-    }
-
-    @Override
-    public void info() {
-        System.out.println("Характеристика монитора");
-        System.out.println("производитель " + monitorMaker);
+        this.fillComputerStrategy = new MonitorFillStratege();
     }
 }

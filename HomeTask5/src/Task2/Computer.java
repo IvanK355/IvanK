@@ -1,8 +1,11 @@
 package Task2;
 
-import java.util.ArrayList;
+public class Computer {
 
-public interface Computer {
+    FillComputerStrategy fillComputerStrategy;
 
-    void info();
+    public void fill() {
+        fillComputerStrategy.fill();
+
+    }
 }

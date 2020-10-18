@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Для того чтобы создать экземпляр " +
-                "экземпляров классов характеристик введите   CPU,\n" +
+                "класса характеристики компбютера введите CPU,\n" +
                 "    MONITOR,\n" +
                 "    RAM,\n" +
                 "    STORAGEDEVICE,\n" +
@@ -20,12 +20,12 @@ public class Main {
             case MONITOR -> factory = new MonitorFactory();
             case RAM -> factory = new RamFactory();
             case STORAGEDEVICE -> factory = new StorageDeviceFactory();
-            case VIDEOCARD -> factory = new StorageDeviceFactory();
+            case VIDEOCARD -> factory = new VideoCardFactory();
             default -> System.out.println("Ошибка ввода");
         }
         if (factory != null) {
             Computer computer = factory.createComputer();
-            computer.info();
+            computer.fill();
         }
     }
 }
