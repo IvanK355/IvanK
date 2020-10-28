@@ -1,21 +1,25 @@
 package Task1;
 
+import java.util.Arrays;
+
 public class MyArrayList<E> {
 
     private int size = 0;
     private Object[] elementData;
-    private int initialArraySize = 10;
+    private int initialArraySize = 0;
 
     public MyArrayList() {
         this.elementData = new Object[initialArraySize];
     }
 
     private void add(E e, Object[] elementData, int s) {
+
         elementData[s] = e;
         size = s + 1;
     }
 
     public boolean add(E e) {
+        grow();
         add(e, elementData, size);
         return true;
     }
@@ -57,5 +61,14 @@ public class MyArrayList<E> {
             }
         }
         remove(i);
+    }
+
+    private Object[] grow(int minCapacity) {
+            return elementData = Arrays.copyOf(elementData, minCapacity);
+        }
+
+
+    private Object[] grow() {
+        return grow(size + 1);
     }
 }

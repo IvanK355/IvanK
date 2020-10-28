@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask6/src/Task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask6/src/Task1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HomeTask6/src/Task1/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask6/src/Task1/MyArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,13 +173,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00064" summary="ДЗ 7 v8">
-      <created>1600960608280</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1600960608280</updated>
     </task>
     <task id="LOCAL-00065" summary="ДЗ 7 v9">
       <created>1600968442208</created>
@@ -518,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603903236174</updated>
     </task>
-    <option name="localTasksCounter" value="113" />
+    <task id="LOCAL-00113" summary="Task 6 part MyArrayList updated v5">
+      <created>1603908680163</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1603908680163</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +539,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ 8" />
     <MESSAGE value="HomeTask7 final version" />
     <MESSAGE value="HomeTask8 v1 Interface create JBDC and Connection" />
     <MESSAGE value="HomeTask8 v2 Insert statement" />
@@ -565,7 +563,8 @@
     <MESSAGE value="Task 6 updated v2" />
     <MESSAGE value="Task 6 part MyArrayList done updated v3" />
     <MESSAGE value="Task 6 part MyArrayList updated v4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 6 part MyArrayList updated v4" />
+    <MESSAGE value="Task 6 part MyArrayList updated v5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 6 part MyArrayList updated v5" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -592,10 +591,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="453" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1599639317415" />
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1601029958821">
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser" timestamp="1603908638337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1601029958821" />
+    <state x="488" y="71" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1603908638337" />
     <state x="412" y="163" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1600671483784">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -640,22 +639,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603908207461">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603910965313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603908207461" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603908207460">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603910965313" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603910965312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603908207460" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603908207460">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603910965312" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603910965312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603908207460" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603908207460">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603910965312" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603910965312">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603908207460" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603910965312" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
