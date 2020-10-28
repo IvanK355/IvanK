@@ -174,13 +174,6 @@
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
     </task>
-    <task id="LOCAL-00065" summary="ДЗ 7 v9">
-      <created>1600968442208</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1600968442210</updated>
-    </task>
     <task id="LOCAL-00066" summary="ДЗ 7 v10">
       <created>1600976068615</created>
       <option name="number" value="00066" />
@@ -517,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603908680163</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Task 6 part MyArrayList updated v6">
+      <created>1603911475984</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1603911475984</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,7 +539,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="HomeTask7 final version" />
     <MESSAGE value="HomeTask8 v1 Interface create JBDC and Connection" />
     <MESSAGE value="HomeTask8 v2 Insert statement" />
     <MESSAGE value="HomeTask8 v3 Insert statement2" />
@@ -564,7 +563,8 @@
     <MESSAGE value="Task 6 part MyArrayList done updated v3" />
     <MESSAGE value="Task 6 part MyArrayList updated v4" />
     <MESSAGE value="Task 6 part MyArrayList updated v5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 6 part MyArrayList updated v5" />
+    <MESSAGE value="Task 6 part MyArrayList updated v6" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 6 part MyArrayList updated v6" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -639,22 +639,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603910965313">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603912214651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603910965313" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603910965312">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603912214651" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603912214650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603910965312" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603910965312">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603912214650" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603912214650">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603910965312" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603910965312">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603912214650" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603912214651">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603910965312" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603912214651" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
