@@ -1,14 +1,13 @@
 package Task1;
 
-import java.util.Objects;
-
 public class MyArrayList<E> {
 
     private int size = 0;
     private Object[] elementData;
+    private int initialArraySize = 10;
 
     public MyArrayList() {
-        this.elementData = new Object[10];
+        this.elementData = new Object[initialArraySize];
     }
 
     private void add(E e, Object[] elementData, int s) {
@@ -30,7 +29,7 @@ public class MyArrayList<E> {
     }
 
     public void clear() {
-        for (int i = 0; i < size; i++) {
+        for (int to = size, i = size = 0; i < to; i++) {
             elementData[i] = null;
         }
     }
@@ -40,5 +39,23 @@ public class MyArrayList<E> {
         if ((newSize = size - 1) > i)
             System.arraycopy(elementData, i + 1, elementData, i, newSize - i);
         elementData[size = newSize] = null;
+    }
+
+    public void remove(Object o) {
+        Object[] es = elementData;
+        int size = this.size;
+        int i = 0;
+        found: {
+            if (o == null) {
+                for (; i < size; i++)
+                    if (es[i] == null)
+                        break found;
+            } else {
+                for (; i < size; i++)
+                    if (o.equals(es[i]))
+                        break found;
+            }
+        }
+        remove(i);
     }
 }
