@@ -14,7 +14,6 @@ public class MyArrayList<E> {
     }
 
     private void add(E e, Object[] elementData, int s) {
-
         elementData[s] = e;
         size = s + 1;
     }
@@ -50,8 +49,8 @@ public class MyArrayList<E> {
     }
 
     public boolean remove(Object o) {
-        final Object[] es = elementData;
-        final int size = this.size;
+        Object[] es = elementData;
+        int size = this.size;
         int i = 0;
         found:
         {
