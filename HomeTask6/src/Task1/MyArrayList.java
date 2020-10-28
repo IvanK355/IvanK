@@ -2,11 +2,8 @@ package Task1;
 
 public class MyArrayList {
 
-    private static int size;
-
-    public int size(Object[] obj) {
-        size = obj.length;
-        return size;
+    public int size(Object[] arr) {
+        return arr.length;
     }
 
     public Object[] add(Object arr[], Object x) {
@@ -45,16 +42,29 @@ public class MyArrayList {
 
     public Object[] removeByElement(Object[] arr, Object item) {
 
-        for(int i = 0; i < arr.length; i++){
-            if(arr[i] == item){
-                // shifting elements
-                for(int j = i; j < arr.length - 1; j++){
-                    arr[j] = arr[j+1];
-                }
-                break;
+
+        int count = 0;
+        for (Object o : arr) {
+            if (o == item)
+                count++;
+        }
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == item) {
+                if (arr.length - 1 - i >= 0) System.arraycopy(arr, i + 1, arr, i, arr.length - 1 - i);
             }
         }
+        Object[] newArray = new Object[arr.length - count];
 
-        return arr;
+        if (arr.length - count >= 0) System.arraycopy(arr, 0, newArray, 0, arr.length - count);
+
+        return newArray;
+    }
+
+    public Object get (Object[] arr, int index) {
+           return arr[index];
+    }
+
+    public Object[] clear(Object[] arr) {
+        return arr = null;
     }
 }
