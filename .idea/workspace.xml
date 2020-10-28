@@ -175,13 +175,6 @@
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
     </task>
-    <task id="LOCAL-00062" summary="ДЗ 7 v6">
-      <created>1600956184372</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1600956184375</updated>
-    </task>
     <task id="LOCAL-00063" summary="ДЗ 7 v7">
       <created>1600957382673</created>
       <option name="number" value="00063" />
@@ -518,7 +511,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603890351203</updated>
     </task>
-    <option name="localTasksCounter" value="111" />
+    <task id="LOCAL-00111" summary="Task 6 part MyArrayList updated v4">
+      <created>1603901672147</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1603901672147</updated>
+    </task>
+    <option name="localTasksCounter" value="112" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,7 +540,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ДЗ 8 v1" />
     <MESSAGE value="ДЗ 8" />
     <MESSAGE value="HomeTask7 final version" />
     <MESSAGE value="HomeTask8 v1 Interface create JBDC and Connection" />
@@ -565,7 +564,8 @@
     <MESSAGE value="Task 6 updated v1" />
     <MESSAGE value="Task 6 updated v2" />
     <MESSAGE value="Task 6 part MyArrayList done updated v3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Task 6 part MyArrayList done updated v3" />
+    <MESSAGE value="Task 6 part MyArrayList updated v4" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task 6 part MyArrayList updated v4" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="42" key="#Inspections" timestamp="1601048813697">
@@ -640,22 +640,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603901552803">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1603903189332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603901552803" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603901552803">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1603903189332" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1603903189332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603901552803" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603901552803">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1603903189332" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1603903189332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603901552803" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603901552803">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1603903189332" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1603903189332">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603901552803" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1603903189332" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -672,10 +672,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1603886540400">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1603901674654">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603886540400" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1603901674654" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

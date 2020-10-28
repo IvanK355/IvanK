@@ -10,10 +10,24 @@ public class Main {
 
         System.out.println("Initial size:\n"
                 + arr.size());
-        for(int i=0;i< arr.size();i++) {
-            System.out.print(arr.get(i)+" ");
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.print(arr.get(i) + " ");
         }
 
+        arr.remove(0);
+        System.out.println("Initial size:\n"
+                + arr.size());
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.print(arr.get(i) + " ");
+        }
 
+        System.out.println("Очищаем массив");
+        arr.clear();
+        System.out.println("Initial size:\n"
+                + arr.size());
+        for (int i = 0; i < arr.size(); i++) {
+            System.out.print(arr.get(i) + " ");
+
+        }
     }
 }
