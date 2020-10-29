@@ -1,5 +1,7 @@
 package Task3;
 
+import java.util.LinkedList;
+
 public class MyLinkedList<E> {
     int size = 0;
 
@@ -59,4 +61,63 @@ public class MyLinkedList<E> {
     }
 
 
+    public boolean remove(Object o) {
+        if (o == null) {
+            for (MyLinkedList.Node<E> x = first; x != null; x = x.next) {
+                if (x.item == null) {
+                    unlink(x);
+                    return true;
+                }
+            }
+        } else {
+            for (MyLinkedList.Node<E> x = first; x != null; x = x.next) {
+                if (o.equals(x.item)) {
+                    unlink(x);
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    E unlink(MyLinkedList.Node<E> x) {
+        // assert x != null;
+        final E element = x.item;
+        final MyLinkedList.Node<E> next = x.next;
+        final MyLinkedList.Node<E> prev = x.prev;
+
+        if (prev == null) {
+            first = next;
+        } else {
+            prev.next = next;
+            x.prev = null;
+        }
+
+        if (next == null) {
+            last = prev;
+        } else {
+            next.prev = prev;
+            x.next = null;
+        }
+
+        x.item = null;
+        size--;
+        return element;
+    }
+
+    public void clear() {
+          for (MyLinkedList.Node<E> x = first; x != null; ) {
+            MyLinkedList.Node<E> next = x.next;
+            x.item = null;
+            x.next = null;
+            x.prev = null;
+            x = next;
+        }
+        first = last = null;
+        size = 0;
+    }
+
+    public E remove(int index) {
+        return unlink(node(index));
+    }
 }
