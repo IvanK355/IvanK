@@ -1,7 +1,5 @@
 package Task3;
 
-import java.util.LinkedList;
-
 public class MyLinkedList<E> {
     int size = 0;
 
@@ -81,7 +79,6 @@ public class MyLinkedList<E> {
     }
 
     E unlink(MyLinkedList.Node<E> x) {
-        // assert x != null;
         final E element = x.item;
         final MyLinkedList.Node<E> next = x.next;
         final MyLinkedList.Node<E> prev = x.prev;
