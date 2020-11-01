@@ -5,6 +5,7 @@ import java.util.Objects;
 
 public class MyArrayList<E> {
 
+
     private int size = 0;
     private Object[] elementData;
 
@@ -25,6 +26,11 @@ public class MyArrayList<E> {
     }
 
     public E get(int index) {
+        Objects.checkIndex(index, size);
+        return elementData(index);
+    }
+
+    E elementData(int index) {
         return (E) elementData[index];
     }
 

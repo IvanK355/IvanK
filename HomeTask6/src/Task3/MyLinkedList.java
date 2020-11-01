@@ -1,7 +1,5 @@
 package Task3;
 
-import java.util.LinkedList;
-
 public class MyLinkedList<E> {
     int size = 0;
 

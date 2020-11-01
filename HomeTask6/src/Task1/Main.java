@@ -2,7 +2,7 @@ package Task1;
 
 public class Main {
     public static void main(String[] args) {
-        MyArrayList<String> arr = new MyArrayList();
+        MyArrayList<String> arr = new MyArrayList<>();
 
         arr.add("1");
         arr.add("2");
@@ -14,6 +14,7 @@ public class Main {
         arr.add("7");
         arr.add("8");
         arr.add("9");
+        System.out.println(arr.get(0));
 
 
         System.out.println("Initial size:" + arr.size());
@@ -22,7 +23,7 @@ public class Main {
         }
         System.out.println();
         System.out.println("Убираем элемент" + " " + "50");
-        arr.remove("50");
+        arr.remove("51");
         System.out.println("Initial size:" + arr.size());
         for (int i = 0; i < arr.size(); i++) {
             System.out.print(arr.get(i) + " ");
