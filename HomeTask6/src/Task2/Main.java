@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Box<Apple> appleBox = new Box<>();
         Box<Orange> orangeBox = new Box<>();
+
         Apple apple = new Apple();
         Orange orange = new Orange();
 

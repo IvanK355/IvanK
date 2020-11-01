@@ -1,5 +1,7 @@
 package Task3;
 
+import java.util.LinkedList;
+
 public class MyLinkedList<E> {
     int size = 0;
 
@@ -35,14 +37,27 @@ public class MyLinkedList<E> {
     }
 
     public E get(int index) {
-
+        checkElementIndex(index);
         return node(index).item;
+    }
+
+    private void checkElementIndex(int index) {
+        if (!isElementIndex(index))
+            throw new IndexOutOfBoundsException(outOfBoundsMsg(index));
+    }
+
+    private boolean isElementIndex(int index) {
+        return index >= 0 && index < size;
+    }
+
+    private String outOfBoundsMsg(int index) {
+        return "Index: "+index+", Size: "+size;
     }
 
     MyLinkedList.Node<E> node(int index) {
 
         Node<E> x;
-        if (index < (size >> 1)) {
+        if (index < (size>>1)) {
             x = first;
             for (int i = 0; i < index; i++)
                 x = x.next;
@@ -114,7 +129,8 @@ public class MyLinkedList<E> {
         size = 0;
     }
 
-    public E remove(int index) {
+     public E remove(int index) {
+        checkElementIndex(index);
         return unlink(node(index));
     }
 }
