@@ -1,33 +1,42 @@
 package Task2;
 
 public class Main {
-
     public static void main(String[] args) {
-
-        double rnd;
-        float box1BoxWeight = 0;
-        float box2BoxWeight = 0;
-        boolean overWeight;
-        Box<Apple> box1 = new Box<>();
-        Box<Orange> box2 = new Box<>();
+        Box<Apple> appleBox = new Box<>();
+        Box<Orange> orangeBox = new Box<>();
         Apple apple = new Apple();
         Orange orange = new Orange();
 
-        for (int i = 0; i < 1000; i++) {
-            rnd = Math.random();
-            if (rnd < 0.5) {
-                box1.add(new Apple());
-            } else box2.add(new Orange());
-
-            box1BoxWeight = box1.getWeight(box1.getQty(), apple.getWeight());
-            box2BoxWeight = box2.getWeight(box2.getQty(), orange.getWeight());
-            overWeight = box1.compare(box1BoxWeight, box2BoxWeight);
-            if (overWeight) {
-                System.out.println("True, Box is ready");break;
-            }
-            else System.out.println("False. Box is filling");
-
+        for (int i=0;i< apple.getQty();i++) {
+            appleBox.addFruit(new Apple());
         }
+
+        for (int i=0; i< orange.getQty();i++){
+            orangeBox.addFruit(new Orange());
+        }
+
+        System.out.println(appleBox.getTotalWeight());
+        System.out.println(orangeBox.getTotalWeight());
+
+        System.out.println(appleBox.compare(orangeBox));
+
+        Box <Apple> appleBox1 = new Box<>();
+        Box <Apple> appleBox2 = new Box<>();
+
+        System.out.println(appleBox.getBox());
+        appleBox.transfer(appleBox1);
+        System.out.println(appleBox.getTotalWeight());
+        System.out.println(appleBox1.getTotalWeight());
+        System.out.println(appleBox.getBox());
+        System.out.println(appleBox1.getBox());
+
+        System.out.println(appleBox1.getBox());
+        appleBox1.transferv2(appleBox2);
+        System.out.println(appleBox1.getTotalWeight());
+        System.out.println(appleBox2.getTotalWeight());
+
+        System.out.println(appleBox1.getBox());
+        System.out.println(appleBox2.getBox());
 
     }
 }

@@ -1,13 +1,8 @@
 package Task2;
 
-public class Apple {
-    private float weight = 1f;
+public class Apple extends Fruit {
 
-    public float getWeight() {
-        return weight;
-    }
-
-    public void setWeight(float weight) {
-        this.weight = weight;
+    public Apple() {
+        super(1f, 15);
     }
 }

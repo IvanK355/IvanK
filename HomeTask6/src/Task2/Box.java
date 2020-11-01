@@ -1,44 +1,62 @@
 package Task2;
 
-public class Box<T> {
+import java.util.ArrayList;
+import java.util.List;
 
-    private T[] fruits;
-    private int qty;
+public class Box<T extends Fruit> {
 
+    private final List<T> fruitList;
+    private float totalWeight;
 
     public Box() {
-        fruits = (T[]) new Object[1000];
+        this.fruitList = new ArrayList<>();
     }
 
-    public T getFruits(int index) {
-        return fruits[index];
+    public void addFruit(T item) {
+        fruitList.add(item);
+        totalWeight += item.getWeight();
     }
 
-    public void setFruits(T[] fruits) {
-        this.fruits = fruits;
+    public void removeFruit(T item) {
+        totalWeight = totalWeight - item.getWeight();
     }
 
-    public int getQty() {
-        return qty;
+    public float getTotalWeight() {
+        return totalWeight;
     }
 
-    public void setQty(int qty) {
-        this.qty = qty;
+    public boolean compare(Box box) {
+        return this.getTotalWeight() == box.getTotalWeight();
     }
 
-    public void add(T item) {
-
-        fruits[qty++] = item;
+    public void transfer(Box <? super T> box) {
+        box.fruitList.addAll(this.fruitList);
+        clear();
+        box.totalWeight = this.totalWeight;
+        this.totalWeight = 0;
     }
 
-    public float getWeight(int qty, float weigth) {
-        return qty * weigth;
+    public void transferv2(Box<? super T> box) {
+
+        for (T t : this.fruitList) {
+            box.addFruit(t);
+        }
+
+        for (T t : this.fruitList) {
+            this.removeFruit(t);
+        }
+
+        clear();
+
     }
 
-    public boolean compare(float weight1, float weight2) {
-        boolean boo;
-        if (weight1 >= weight2) boo = true;
-        else boo = false;
-        return boo;
+    public void clear() {
+        fruitList.clear();
+    }
+
+    public ArrayList<T> getBox () {
+
+        return new ArrayList<>(fruitList);
+
     }
 }

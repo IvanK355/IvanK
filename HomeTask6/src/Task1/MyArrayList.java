@@ -7,9 +7,9 @@ public class MyArrayList<E> {
 
     private int size = 0;
     private Object[] elementData;
-    private int initialArraySize = 0;
 
     public MyArrayList() {
+        int initialArraySize = 0;
         this.elementData = new Object[initialArraySize];
     }
 
