@@ -24,9 +24,9 @@ public class MyArrayList<E> {
         add(e, elementData, size);
     }
 
-    public E get(int index) {
+    public Object get(int index) {
         Objects.checkIndex(index, size);
-        return (E) elementData[index];
+        return elementData[index];
     }
 
     public int size() {

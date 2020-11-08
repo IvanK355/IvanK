@@ -11,12 +11,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask6/src/Task1/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask6/src/Task1/MyArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask6/src/Task3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask6/src/Task3/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeTask6/src/Task3/MyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/HomeTask6/src/Task3/MyLinkedList.java" afterDir="false" />
-    </list>
+    <list default="true" id="7fe1ebb2-d1cb-4f7b-ad99-dd2dfe59b191" name="Default Changelist" comment="Test10.java ready" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,20 +185,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1599026635340</updated>
-    </task>
-    <task id="LOCAL-00080" summary="ДЗ 8">
-      <created>1601126437045</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1601126437045</updated>
-    </task>
-    <task id="LOCAL-00081" summary="HomeTask7 final version">
-      <created>1601192320830</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1601192320830</updated>
     </task>
     <task id="LOCAL-00082" summary="HomeTask8 v1 Interface create JBDC and Connection">
       <created>1601193777442</created>
@@ -534,7 +515,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604861184982</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="task 6 updated by comments v1">
+      <created>1604862038308</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1604862038308</updated>
+    </task>
+    <task id="LOCAL-00130" summary="task 6 updated by comments v1">
+      <created>1604862177159</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1604862177160</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -656,22 +651,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="507" y="283" key="Github.CreateGistDialog/0.0.1366.728@0.0.1366.728" timestamp="1601048923909" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604861668284">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1604862001175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604861668284" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604861668284">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1604862001175" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1604862001175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604861668284" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604861668284">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1604862001175" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1604862001174">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604861668284" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604861668284">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1604862001174" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1604862001175">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604861668284" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1604862001175" />
     <state x="263" y="106" key="IDE.errors.dialog" timestamp="1601053157562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -688,10 +683,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="513" y="233" key="VCS.EditChangelistDialog/0.0.1366.728@0.0.1366.728" timestamp="1599031626807" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1604861190839">
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1604862178942">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604861190839" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1604862178942" />
     <state x="498" y="151" key="chooseDestDirectoryDialog" timestamp="1600671596080">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
