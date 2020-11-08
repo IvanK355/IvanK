@@ -1,5 +1,7 @@
 package Task3;
 
+import java.util.OptionalLong;
+
 public class MyLinkedList<E> {
     private int size = 0;
 
@@ -23,15 +25,14 @@ public class MyLinkedList<E> {
         size = 0;
     }
 
-    public E remove(int index) {
+    public void remove(int index) {
         checkElementIndex(index);
-        return unlink(node(index));
+        unlink(node(index));
     }
 
     public int size() {
         return size;
     }
-
 
     public void remove(Object o) {
         int size = this.size;
@@ -44,9 +45,8 @@ public class MyLinkedList<E> {
         }
     }
 
-    public boolean add(E e) {
+    public void add(E e) {
         linkLast(e);
-        return true;
     }
 
     public E get(int index) {
@@ -55,13 +55,13 @@ public class MyLinkedList<E> {
     }
 
     private void linkLast(E e) {
-        final MyLinkedList.Node<E> lastElement = last;
-        final MyLinkedList.Node<E> newNode = new MyLinkedList.Node<>(lastElement, e, null);
+        final MyLinkedList.Node<E> oldLastNode = last;
+        final MyLinkedList.Node<E> newNode = new MyLinkedList.Node<>(oldLastNode, e, null);
         last = newNode;
-        if (lastElement == null)
+        if (oldLastNode == null)
             first = newNode;
         else
-            lastElement.next = newNode;
+            oldLastNode.next = newNode;
         size++;
     }
 
@@ -85,9 +85,7 @@ public class MyLinkedList<E> {
         return x;
     }
 
-
-    private E unlink(MyLinkedList.Node<E> x) {
-        final E element = x.item;
+    private void unlink(MyLinkedList.Node<E> x) {
         final MyLinkedList.Node<E> next = x.next;
         final MyLinkedList.Node<E> prev = x.prev;
 
@@ -107,7 +105,6 @@ public class MyLinkedList<E> {
 
         x.item = null;
         size--;
-        return element;
     }
 
 

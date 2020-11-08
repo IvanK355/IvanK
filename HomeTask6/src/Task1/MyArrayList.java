@@ -19,18 +19,13 @@ public class MyArrayList<E> {
         size = s + 1;
     }
 
-    public boolean add(E e) {
+    public void add(E e) {
         grow();
         add(e, elementData, size);
-        return true;
     }
 
     public E get(int index) {
         Objects.checkIndex(index, size);
-        return elementData(index);
-    }
-
-    public E elementData(int index) {
         return (E) elementData[index];
     }
 
@@ -44,17 +39,13 @@ public class MyArrayList<E> {
         this.elementData = new Object[initialArraySize];
     }
 
-    public E remove(int index) {
+    public void remove(int index) {
         Objects.checkIndex(index, size);
         Object[] es = elementData;
-
-        E oldValue = (E) es[index];
         fastRemove(es, index);
-
-        return oldValue;
     }
 
-    public boolean remove(Object o) {
+    public void remove(Object o) {
         Object[] es = elementData;
         int size = this.size;
         for (int i = 0; i < size; i++) {
@@ -63,7 +54,6 @@ public class MyArrayList<E> {
                 break;
             }
         }
-        return true;
     }
 
     private void fastRemove(Object[] es, int i) {
@@ -73,11 +63,11 @@ public class MyArrayList<E> {
         es[size = newSize] = null;
     }
 
-    private Object[] grow(int minCapacity) {
-        return elementData = Arrays.copyOf(elementData, minCapacity);
+    private void grow(int minCapacity) {
+        elementData = Arrays.copyOf(elementData, minCapacity);
     }
 
-    private Object[] grow() {
-        return grow(size + 1);
+    private void grow() {
+        grow(size + 1);
     }
 }

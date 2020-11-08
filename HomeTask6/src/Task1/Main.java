@@ -14,8 +14,6 @@ public class Main {
         arr.add("7");
         arr.add("8");
         arr.add("9");
-        System.out.println(arr.get(0));
-
 
         System.out.println("Initial size:" + arr.size());
         for (int i = 0; i < arr.size(); i++) {
