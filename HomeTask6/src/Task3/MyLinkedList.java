@@ -1,7 +1,5 @@
 package Task3;
 
-import java.util.OptionalLong;
-
 public class MyLinkedList<E> {
     private int size = 0;
 
@@ -56,12 +54,12 @@ public class MyLinkedList<E> {
 
     private void linkLast(E e) {
         final MyLinkedList.Node<E> oldLastNode = last;
-        final MyLinkedList.Node<E> newNode = new MyLinkedList.Node<>(oldLastNode, e, null);
-        last = newNode;
+        final MyLinkedList.Node<E> newLastNode = new MyLinkedList.Node<>(oldLastNode, e, null);
+        last = newLastNode;
         if (oldLastNode == null)
-            first = newNode;
+            first = newLastNode;
         else
-            oldLastNode.next = newNode;
+            oldLastNode.next = newLastNode;
         size++;
     }
 
