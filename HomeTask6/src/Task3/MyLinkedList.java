@@ -1,10 +1,10 @@
 package Task3;
 
 public class MyLinkedList<E> {
-    int size = 0;
+    private int size = 0;
 
-    MyLinkedList.Node<E> first;
-    MyLinkedList.Node<E> last;
+    private MyLinkedList.Node<E> first;
+    private MyLinkedList.Node<E> last;
 
     private static class Node<E> {
         E item;
@@ -18,15 +18,30 @@ public class MyLinkedList<E> {
         }
     }
 
-    void linkLast(E e) {
-        final MyLinkedList.Node<E> l = last;
-        final MyLinkedList.Node<E> newNode = new MyLinkedList.Node<>(l, e, null);
-        last = newNode;
-        if (l == null)
-            first = newNode;
-        else
-            l.next = newNode;
-        size++;
+    public void clear() {
+        first = last = null;
+        size = 0;
+    }
+
+    public E remove(int index) {
+        checkElementIndex(index);
+        return unlink(node(index));
+    }
+
+    public int size() {
+        return size;
+    }
+
+
+    public void remove(Object o) {
+        int size = this.size;
+        for (int i = 0; i < size; i++) {
+            if (o == null) break;
+            if (o.equals(node(i).item)) {
+                remove(i);
+                break;
+            }
+        }
     }
 
     public boolean add(E e) {
@@ -39,23 +54,26 @@ public class MyLinkedList<E> {
         return node(index).item;
     }
 
+    private void linkLast(E e) {
+        final MyLinkedList.Node<E> lastElement = last;
+        final MyLinkedList.Node<E> newNode = new MyLinkedList.Node<>(lastElement, e, null);
+        last = newNode;
+        if (lastElement == null)
+            first = newNode;
+        else
+            lastElement.next = newNode;
+        size++;
+    }
+
     private void checkElementIndex(int index) {
         if (!isElementIndex(index))
             throw new IndexOutOfBoundsException(outOfBoundsMsg(index));
     }
 
-    private boolean isElementIndex(int index) {
-        return index >= 0 && index < size;
-    }
-
-    private String outOfBoundsMsg(int index) {
-        return "Index: "+index+", Size: "+size;
-    }
-
-    MyLinkedList.Node<E> node(int index) {
+    private MyLinkedList.Node<E> node(int index) {
 
         Node<E> x;
-        if (index < (size>>1)) {
+        if (index < (size >> 1)) {
             x = first;
             for (int i = 0; i < index; i++)
                 x = x.next;
@@ -67,31 +85,8 @@ public class MyLinkedList<E> {
         return x;
     }
 
-    public int size() {
-        return size;
-    }
 
-
-    public boolean remove(Object o) {
-        if (o == null) {
-            for (MyLinkedList.Node<E> x = first; x != null; x = x.next) {
-                if (x.item == null) {
-                    unlink(x);
-                    return true;
-                }
-            }
-        } else {
-            for (MyLinkedList.Node<E> x = first; x != null; x = x.next) {
-                if (o.equals(x.item)) {
-                    unlink(x);
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    E unlink(MyLinkedList.Node<E> x) {
+    private E unlink(MyLinkedList.Node<E> x) {
         final E element = x.item;
         final MyLinkedList.Node<E> next = x.next;
         final MyLinkedList.Node<E> prev = x.prev;
@@ -115,20 +110,12 @@ public class MyLinkedList<E> {
         return element;
     }
 
-    public void clear() {
-          for (MyLinkedList.Node<E> x = first; x != null; ) {
-            MyLinkedList.Node<E> next = x.next;
-            x.item = null;
-            x.next = null;
-            x.prev = null;
-            x = next;
-        }
-        first = last = null;
-        size = 0;
+
+    private boolean isElementIndex(int index) {
+        return index >= 0 && index < size;
     }
 
-     public E remove(int index) {
-        checkElementIndex(index);
-        return unlink(node(index));
+    private String outOfBoundsMsg(int index) {
+        return "Index: " + index + ", Size: " + size;
     }
 }

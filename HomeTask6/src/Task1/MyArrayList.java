@@ -30,7 +30,7 @@ public class MyArrayList<E> {
         return elementData(index);
     }
 
-    E elementData(int index) {
+    public E elementData(int index) {
         return (E) elementData[index];
     }
 
@@ -39,9 +39,9 @@ public class MyArrayList<E> {
     }
 
     public void clear() {
-        for (int to = size, i = size = 0; i < to; i++) {
-            elementData[i] = null;
-        }
+        size = 0;
+        int initialArraySize = 0;
+        this.elementData = new Object[initialArraySize];
     }
 
     public E remove(int index) {
@@ -57,21 +57,12 @@ public class MyArrayList<E> {
     public boolean remove(Object o) {
         Object[] es = elementData;
         int size = this.size;
-        int i = 0;
-        found:
-        {
-            if (o == null) {
-                for (; i < size; i++)
-                    if (es[i] == null)
-                        break found;
-            } else {
-                for (; i < size; i++)
-                    if (o.equals(es[i]))
-                        break found;
+        for (int i = 0; i < size; i++) {
+            if (es[i].equals(o)) {
+                fastRemove(es, i);
+                break;
             }
-            return false;
         }
-        fastRemove(es, i);
         return true;
     }
 
